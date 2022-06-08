@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Map - MapLibre</title>
+  <script src="./maplibre-gl.js"></script>
+  <link href="./maplibre-gl.css" rel="stylesheet" />
+  <style>
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+  </style>
+</head>
+<body>
+
+  <!-- HTML CONTENT STARTS HERE -->
+  <div id="map"></div>
+  <!-- HTML CONTENT ENDS HERE -->
+
+<script>
+  var map = new maplibregl.Map({
+      container: 'map', // container id
+      style: 'https://demotiles.maplibre.org/style.json', // style URL
+      center: [0, 0], // starting position [lng, lat]
+      zoom: 1 // starting zoom
+  });
+
+  const marker = new maplibregl.Marker()
+    .setLngLat([12.554729, 55.70651])
+    .setPopup(new maplibregl.Popup({ offset: 25 }).setText(
+      'Construction on the Washington Monument began in 1848.'
+    ))
+    .addTo(map);
+</script>
+</body>
+</html>

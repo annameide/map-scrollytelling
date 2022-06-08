@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Map - Leaflet</title>
+  <link href="./leaflet.css" rel="stylesheet" />
+  <script src="./leaflet.js"></script>
+
+  <!-- hier einstellung full screen -->
+<style>
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+  </style>
+</head>
+<body>
+
+  <!-- HTML CONTENT STARTS HERE -->
+  <!-- in einem div ist eine interaktive karte. man kann auch mehrere divs untereinander haben auf einer seite. -->
+  <div id="map"></div>
+  <!-- HTML CONTENT ENDS HERE -->
+
+<script>
+
+// HTML CONTENT STARTS HERE
+// die koordinatenpaare müssen manchmal umgedreht werden und es reichen 4 nachkommastellen
+// 13 ist die zoomstufe: klein heisst rauszoomen 
+	var map = L.map('map',{
+		scrollWheelZoom: false
+}).setView([52.395386619498005, 13.077207161591001], 17);
+
+	// hier kann man den style reinladen, den man von einer webseite ausgesucht hat
+	var tiles = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		// hier gibt man das copyright an 
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(map);
+
+	var marker = L.marker([52.395386619498005, 13.077207161591001]).addTo(map)
+		.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
+</script>
+</body>
+</html>

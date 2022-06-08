@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Map - OpenLayers</title>
+  <link href="./ol.css" rel="stylesheet" />
+  <script src="./ol.js"></script>
+	<style>
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+  </style>
+</head>
+<body>
+
+  <!-- HTML CONTENT STARTS HERE -->
+  <div id="map"></div>
+  <div id="popup" class="ol-popup">
+    <a href="#" id="popup-closer" class="ol-popup-closer">CLOSE</a>
+    <div id="popup-content"></div>
+  </div>
+  <!-- HTML CONTENT ENDS HERE -->
+
+<script>
+  var attribution = new ol.control.Attribution({
+    collapsible: false
+  });
+
+  var map = new ol.Map({
+    controls: ol.control.defaults({attribution: false}).extend([attribution]),
+    layers: [
+      new ol.layer.Tile({
+        source: new ol.source.OSM({
+          url: 'https://tile.openstreetmap.be/osmbe/{z}/{x}/{y}.png',
+          attributions: [ ol.source.OSM.ATTRIBUTION, 'Tiles courtesy of <a href="https://geo6.be/">GEO-6</a>' ],
+          maxZoom: 18
+        })
+      })
+    ],
+    target: 'map',
+    view: new ol.View({
+      center: ol.proj.fromLonLat([4.35247, 50.84673]),
+      maxZoom: 18,
+      zoom: 12
+    })
+  });
+
+  var layer = new ol.layer.Vector({
+    source: new ol.source.Vector({
+      features: [
+        new ol.Feature({
+          geometry: new ol.geom.Point(ol.proj.fromLonLat([4.35247, 50.84673]))
+        })
+      ]
+    })
+  });
+  map.addLayer(layer);
+
+  var container = document.getElementById('popup');
+  var content = document.getElementById('popup-content');
+  var closer = document.getElementById('popup-closer');
+
+  var overlay = new ol.Overlay({
+    element: container,
+    autoPan: true,
+    autoPanAnimation: {
+        duration: 250
+    }
+  });
+  map.addOverlay(overlay);
+
+  closer.onclick = function() {
+    overlay.setPosition(undefined);
+    closer.blur();
+    return false;
+  };
+
+  map.on('singleclick', function (event) {
+    if (map.hasFeatureAtPixel(event.pixel) === true) {
+      var coordinate = event.coordinate;
+      content.innerHTML = '<b>Hello world!</b><br />I am a popup.';
+      overlay.setPosition(coordinate);
+    } else {
+      overlay.setPosition(undefined);
+      closer.blur();
+    }
+  });
+</script>
+</body>
+</html>

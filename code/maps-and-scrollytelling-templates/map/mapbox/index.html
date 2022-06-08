@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Map - Mapbox</title>
+  <link href="./mapbox-gl.css" rel="stylesheet">
+  <script src="./mapbox-gl.js"></script>
+  <style>
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+  </style>
+</head>
+<body>
+
+  <!-- HTML CONTENT STARTS HERE -->
+  <div id="map"></div>
+  <!-- HTML CONTENT ENDS HERE -->
+
+<script>
+
+//den token kriegt man mit der anmeldung bei mapbox
+	mapboxgl.accessToken = 'pk.eyJ1IjoianVsaTg0IiwiYSI6Il9fLThha2MifQ.-fdD0A_5xRzjLwPF49AyuA'; 
+  const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    // hier legt man den eigenen style rein, den man vorher in studio gemacht hat
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [13.077207161591001, 52.395386619498005], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+  });
+
+  const marker = new mapboxgl.Marker()
+    .setLngLat([12.554729, 55.70651])
+    .setPopup(new mapboxgl.Popup({ offset: 25 }).setText(
+      'Construction on the Washington Monument began in 1848.'
+    ))
+    .addTo(map);
+
+</script>
+</body>
+</html>
