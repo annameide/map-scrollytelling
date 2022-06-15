@@ -23,7 +23,7 @@ var config = {
         description: 'Here comes the text for the intoduction. <br><br> try out how much text looks good.',
         location: {
             // look for offset in documentastion / center of display 16:9 passt
-            center: [13.0385, 52.4042],
+            center: [12.8767, 52.4695], 
             zoom: 11,
             // pitch: 39.50, nice touch try out later
             // bearing: 36.00
