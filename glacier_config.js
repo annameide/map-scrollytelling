@@ -12,10 +12,15 @@ var config = {
   
   chapters: [
       {
+          // first illustration
+          // ??? muss die id geändert werden?
+
           id: 'glacier-np',
           alignment: 'full',
           title: 'first illustration: agricultural fields',
-          image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/2015-06-19_Glacier_National_Park_%28U.S.%29_8633.jpg/800px-2015-06-19_Glacier_National_Park_%28U.S.%29_8633.jpg',
+          
+          // ??? wie lädt man ein bild rein? vorher wurde es über einen link auf wikipedia geladen.
+          image: 'http://assets/0_testillustration.png',
           description: 'description of the illustration if wanted comes here',
           location: {
               center: [-113.91666, 48.66451],
@@ -23,6 +28,7 @@ var config = {
               pitch: 0.00,
               bearing: 0.00
           },
+          
           onChapterEnter: [
               {
                   layer: 'gnpglaciers-1998',
@@ -40,18 +46,23 @@ var config = {
               }
           ]
       },
+
+      // first text box
       {
           id: 'harrison1998',
           alignment: 'left',
-          title: 'Harrison Glacier, 1998',
+          title: 'first textbox: chapter one: agricultural fields',
           image: '',
-          description: 'Harrison Glacier is located in the US state of Montana in Glacier National Park. Situated on a southeast facing ridge immediately south of Mount Jackson, Harrison Glacier is the largest glacier in Glacier National Park. Compared to many of the vanishing glaciers in Glacier National Park, Harrison Glacier has a much higher altitude accumulation zone (approximately 9,000 feet (2,700 m)) which has allowed it to maintain some equilibrium in its glacier mass balance.',
+          // wie kann ich im text unterstreichen? 
+          description: 'Here comes the text for the first chapter.',
           location: {
               center: [-113.72917, 48.58938],
               zoom: 12.92,
               pitch: 39.50,
               bearing: 36.00
           },
+
+          // hier die felder polygone anzeigen (und reinzoomen???)
           onChapterEnter: [],
           onChapterExit: [
               // {
@@ -60,18 +71,22 @@ var config = {
               // }
           ]
       },
+
+      // second text box
       {
           id: 'harrison2015',
           alignment: 'left',
-          title: 'Harrison Glacier, 2015',
+          title: 'second text box: allotment fields',
           image: '',
-          description: 'Between 1998 and 2015, Harrison Glacier lost 169 acres of surface area (about 37%).',
+          description: 'here comes the text. here comes the text.',
           location: {
               center: [-113.72917, 48.58938],
               zoom: 12.92,
               pitch: 39.50,
               bearing: 36.00
           },
+          
+          // hier allotment fields polygone anzeigen
           onChapterEnter: [
               {
                   layer: 'gnpglaciers-2015',
