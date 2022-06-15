@@ -2,7 +2,8 @@
 <html>
 <head>
     <meta charset='utf-8' />
-
+    
+    <!-- tub text -->
     <title>Project Title Here</title>
     
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
@@ -17,22 +18,21 @@
     
     <!-- css stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
-    
-    
+
 
 </head>
-
-
-
-
 
 
 <body>
 
 <div id="map"></div>
+
 <div id="story"></div>
+
 <script src="./glacier_config.js"></script>
+
 <script>
+
 var layerTypes = {
     'fill': ['fill-opacity'],
     'line': ['line-opacity'],
@@ -188,6 +188,7 @@ map.on("load", function() {
             'tileSize': 512,
             'maxzoom': 14
         });
+        
         // add the DEM source as a terrain layer with exaggerated height
         map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
 
