@@ -23,7 +23,7 @@ var config = {
         description: 'Here comes the text for the intoduction. <br><br> try out how much text looks good.',
         location: {
             // look for offset in documentastion / center of display 16:9 passt
-            center: [13.0623, 52.3934],
+            center: [13.0385, 52.4042],
             zoom: 11,
             // pitch: 39.50, nice touch try out later
             // bearing: 36.00
@@ -31,17 +31,29 @@ var config = {
             bearing: 0
         },
 
-        // hier alle layer einzeln reinschreiben
+        // write all layers in here which you want to hide
         onChapterEnter: [
+            //{
+                //layer: 'potsdam-city-fill',
+                //opacity: 0
+            //},
+
             {
-                layer: 'potsdam-city-fill-bbeqi9',
+                layer: 'farmland-landuse',
                 opacity: 0
             },
-// zweiter layer ... 
+
             {
-                layer: 'potsdam-city-fill-bbeqi9',
+                layer: 'allotments-78oelq',
                 opacity: 0
-            }
+            },
+            
+            {
+                layer: 'orchard-landuse',
+                opacity: 0
+            } 
+
+
         ],
         onChapterExit: [
              
