@@ -1,9 +1,9 @@
 var config = {
-  style: 'mapbox://styles/branigan/cjz37rcb003ib1cr3s8rnkt2d',
-  accessToken: 'pk.eyJ1IjoibWJ4c29sdXRpb25zIiwiYSI6ImNrMm01aG9hdTBlZGwzbXQ1ZXVrNHNmejAifQ.QHQA0N6XPWddCXtvoODHZg',
+  style: 'mapbox://styles/annamei1913/cl49mbgl3003k14nvp4483s62',
+  accessToken: 'pk.eyJ1IjoiYW5uYW1laTE5MTMiLCJhIjoiY2wxbmh5dDJmMDFrZTNjbzhzZGloYjdsaCJ9.2d3SFzdAFD2O4tuUgAZ-pg',
   showMarkers: false,
   theme: 'dark',
-  use3dTerrain: true,
+  use3dTerrain: false,
   // title
   title: 'Working Title Comes Here',
   subtitle: 'subtitle comes here',
@@ -20,7 +20,7 @@ var config = {
           title: 'first illustration: agricultural fields',
           
           // ??? wie lädt man ein bild rein? vorher wurde es über einen link auf wikipedia geladen.
-          image: 'http://assets/0_testillustration.png',
+          image: './assets/0_testillustration.png',
           description: 'description of the illustration if wanted comes here',
           location: {
               center: [-113.91666, 48.66451],
@@ -28,7 +28,7 @@ var config = {
               pitch: 0.00,
               bearing: 0.00
           },
-          
+
           onChapterEnter: [
               {
                   layer: 'gnpglaciers-1998',
