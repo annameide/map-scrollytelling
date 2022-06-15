@@ -17,14 +17,14 @@ var config = {
     {
         id: 'harrison1998', // in doku gucken, hat eher keinen einfluss
         alignment: 'left',
-        title: 'box zero: intoduction',
+        title: '1 box zero: intoduction',
         image: '',
         // wie kann ich im text unterstreichen? 
         description: 'Here comes the text for the intoduction. <br><br> try out how much text looks good.',
         location: {
-            // look for offset in documentastion / center of display 16:9 passt
-            center: [12.8767, 52.4695], 
-            zoom: 11,
+            // look for offset in documentation / center of display 16:9 passt
+            center: [12.9184, 52.4496],
+            zoom: 10.9,
             // pitch: 39.50, nice touch try out later
             // bearing: 36.00
             pitch: 0,
@@ -51,32 +51,71 @@ var config = {
             {
                 layer: 'orchard-landuse',
                 opacity: 0
-            } 
-
-
+            }
         ],
+
+
         onChapterExit: [
-             
-        ]
+            //{
+            //layer: 'potsdam-city-fill',
+            //opacity: 0
+        //},
+
+        {
+            layer: 'farmland-landuse',
+            opacity: 1
+        },
+
+        {
+            layer: 'allotments-78oelq',
+            opacity: 0
+        },
+        
+        {
+            layer: 'orchard-landuse',
+            opacity: 0
+        } ]
     },
 
-          // first text box
+
+          // first text box agrar felder
           {
-            id: 'harrison1998',
+            id: 'harrison1998--1',
             alignment: 'left',
-            title: 'first textbox: chapter one: agricultural fields',
+            title: '2 first textbox: chapter: agricultural fields',
             image: '',
             // wie kann ich im text unterstreichen? 
             description: 'Here comes the text for the first chapter.',
             location: {
-                center: [-113.72917, 48.58938],
-                zoom: 12.92,
-                pitch: 39.50,
-                bearing: 36.00
+                center: [12.9184, 52.4496],
+                zoom: 14,
+                pitch: 0,
+                bearing: 0
+                //pitch: 39.50,
+                //bearing: 36.00
             },
   
-            // hier die felder polygone anzeigen (und reinzoomen???)
-            onChapterEnter: [],
+            onChapterEnter: [
+                //{
+                //layer: 'potsdam-city-fill',
+                //opacity: 0
+            //},
+
+            //{
+              //  layer: 'farmland-landuse',
+                //opacity: 0
+            //},
+
+            {
+                layer: 'allotments-78oelq',
+                opacity: 0
+            },
+            
+            {
+                layer: 'orchard-landuse',
+                opacity: 0
+            } 
+        ],
             onChapterExit: [
                 // {
                 //     layer: 'gnpglaciers-2015',
@@ -88,7 +127,6 @@ var config = {
     
     {
           // first illustration
-          // ??? muss die id geändert werden?
 
           id: 'glacier-np',
           alignment: 'full',
@@ -98,21 +136,32 @@ var config = {
           image: './assets/0_testillustration.png',
           description: 'description of the illustration if wanted comes here',
           location: {
-              center: [-113.91666, 48.66451],
+              center: [12.9184, 52.4496],
               zoom: 8,
               pitch: 0.00,
               bearing: 0.00
           },
 
           onChapterEnter: [
-              {
-                  layer: 'gnpglaciers-1998',
-                  opacity: 0.25
-              },
-              {
-                  layer: 'glaciernp-boundary',
-                  opacity: 0.25
-              }
+              //{
+                //layer: 'potsdam-city-fill',
+                //opacity: 0
+            //},
+
+            //{
+              //  layer: 'farmland-landuse',
+                //opacity: 0
+            //},
+
+            {
+                layer: 'allotments-78oelq',
+                opacity: 0
+            },
+            
+            {
+                layer: 'orchard-landuse',
+                opacity: 0
+            } 
           ],
           onChapterExit: [
               {
