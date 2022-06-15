@@ -49,8 +49,101 @@ var alignments = {
     'right': 'righty',
     'full': 'fully'
 }
+const transformRequest = (url) => {
+    const hasQuery = url.indexOf("?") !== -1;
+    const suffix = hasQuery ? "&pluginName=scrollytellingV2" : "?pluginName=scrollytellingV2";
+    return {
+      url: url + suffix
+    }
+}
+mapboxgl.accessToken = config.accessToken;
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: config.style,
+    center: config.chapters[0].location.center,
+    zoom: config.chapters[0].location.zoom,
+    bearing: config.chapters[0].location.bearing,
+    pitch: config.chapters[0].location.pitch,
+    interactive: false,
+    transformRequest: transformRequest
+});
+
+if (config.showMarkers) {
+    var marker = new mapboxgl.Marker({ color: config.markerColor });
+    marker.setLngLat(config.chapters[0].location.center).addTo(map);
+}
+
+// instantiate the scrollama
+var scroller = scrollama();
+
+map.on("load", function() {
+    if (config.use3dTerrain) {
+        map.addSource('mapbox-dem', {
+            'type': 'raster-dem',
+            'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+            'tileSize': 512,
+            'maxzoom': 14
+        });
+        
+        // add the DEM source as a terrain layer with exaggerated height
+        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+
+        // add a sky layer that will show when the map is highly pitched
+        map.addLayer({
+            'id': 'sky',
+            'type': 'sky',
+            'paint': {
+                'sky-type': 'atmosphere',
+                'sky-atmosphere-sun': [0.0, 0.0],
+                'sky-atmosphere-sun-intensity': 15
+            }
+        });
+    };
+
+    // setup the instance, pass callback functions
+    scroller
+    .setup({
+        step: '.step',
+        offset: 0.5,
+        progress: true
+    })
+    .onStepEnter(response => {
+        var chapter = config.chapters.find(chap => chap.id === response.element.id);
+        response.element.classList.add('active');
+        map[chapter.mapAnimation || 'flyTo'](chapter.location);
+
+        if (config.showMarkers) {
+            marker.setLngLat(chapter.location.center);
+        }
+        if (chapter.onChapterEnter.length > 0) {
+            chapter.onChapterEnter.forEach(setLayerOpacity);
+        }
+        if (chapter.callback) {
+            window[chapter.callback]();
+        }
+        if (chapter.rotateAnimation) {
+            map.once('moveend', function() {
+                const rotateNumber = map.getBearing();
+                map.rotateTo(rotateNumber + 90, {
+                    duration: 24000, easing: function (t) {
+                        return t;
+                    }
+                });
+            });
+        }
+    })
+    .onStepExit(response => {
+        var chapter = config.chapters.find(chap => chap.id === response.element.id);
+        response.element.classList.remove('active');
+        if (chapter.onChapterExit.length > 0) {
+            chapter.onChapterExit.forEach(setLayerOpacity);
+        }
+    });
+});
+
 
 function getLayerPaintType(layer) {
+    //console.log(map.getStyle().layers); um layer namen ganz genau zu sehen
     var layerType = map.getLayer(layer).type;
     return layerTypes[layerType];
 }
@@ -151,99 +244,9 @@ if (footer.innerText.length > 0) {
     story.appendChild(footer);
 }
 
-mapboxgl.accessToken = config.accessToken;
 
-const transformRequest = (url) => {
-    const hasQuery = url.indexOf("?") !== -1;
-    const suffix = hasQuery ? "&pluginName=scrollytellingV2" : "?pluginName=scrollytellingV2";
-    return {
-      url: url + suffix
-    }
-}
 
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: config.style,
-    center: config.chapters[0].location.center,
-    zoom: config.chapters[0].location.zoom,
-    bearing: config.chapters[0].location.bearing,
-    pitch: config.chapters[0].location.pitch,
-    interactive: false,
-    transformRequest: transformRequest
-});
 
-if (config.showMarkers) {
-    var marker = new mapboxgl.Marker({ color: config.markerColor });
-    marker.setLngLat(config.chapters[0].location.center).addTo(map);
-}
-
-// instantiate the scrollama
-var scroller = scrollama();
-
-map.on("load", function() {
-    if (config.use3dTerrain) {
-        map.addSource('mapbox-dem', {
-            'type': 'raster-dem',
-            'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
-            'tileSize': 512,
-            'maxzoom': 14
-        });
-        
-        // add the DEM source as a terrain layer with exaggerated height
-        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
-
-        // add a sky layer that will show when the map is highly pitched
-        map.addLayer({
-            'id': 'sky',
-            'type': 'sky',
-            'paint': {
-                'sky-type': 'atmosphere',
-                'sky-atmosphere-sun': [0.0, 0.0],
-                'sky-atmosphere-sun-intensity': 15
-            }
-        });
-    };
-
-    // setup the instance, pass callback functions
-    scroller
-    .setup({
-        step: '.step',
-        offset: 0.5,
-        progress: true
-    })
-    .onStepEnter(response => {
-        var chapter = config.chapters.find(chap => chap.id === response.element.id);
-        response.element.classList.add('active');
-        map[chapter.mapAnimation || 'flyTo'](chapter.location);
-
-        if (config.showMarkers) {
-            marker.setLngLat(chapter.location.center);
-        }
-        if (chapter.onChapterEnter.length > 0) {
-            chapter.onChapterEnter.forEach(setLayerOpacity);
-        }
-        if (chapter.callback) {
-            window[chapter.callback]();
-        }
-        if (chapter.rotateAnimation) {
-            map.once('moveend', function() {
-                const rotateNumber = map.getBearing();
-                map.rotateTo(rotateNumber + 90, {
-                    duration: 24000, easing: function (t) {
-                        return t;
-                    }
-                });
-            });
-        }
-    })
-    .onStepExit(response => {
-        var chapter = config.chapters.find(chap => chap.id === response.element.id);
-        response.element.classList.remove('active');
-        if (chapter.onChapterExit.length > 0) {
-            chapter.onChapterExit.forEach(setLayerOpacity);
-        }
-    });
-});
 
 // setup resize event
 window.addEventListener('resize', scroller.resize);
