@@ -2,7 +2,7 @@ var config = {
   style: 'mapbox://styles/annamei1913/cl49mbgl3003k14nvp4483s62',
   accessToken: 'pk.eyJ1IjoiYW5uYW1laTE5MTMiLCJhIjoiY2wxbmh5dDJmMDFrZTNjbzhzZGloYjdsaCJ9.2d3SFzdAFD2O4tuUgAZ-pg',
   showMarkers: false,
-  theme: 'dark',
+  theme: 'light',
   use3dTerrain: false,
   // title
   title: 'Working Title Comes Here',
@@ -11,7 +11,61 @@ var config = {
   footer: 'Footer text: Copyright Anna Meide, FHP, ...',
   
   chapters: [
-      {
+    
+    // introduction  
+    {
+        id: 'harrison1998',
+        alignment: 'left',
+        title: 'box zero: intoduction',
+        image: '',
+        // wie kann ich im text unterstreichen? 
+        description: 'Here comes the text for the intoduction. <br><br> try out how much text looks good.',
+        location: {
+            center: [13.0623, 52.3934],
+            zoom: 11,
+            // pitch: 39.50, nice touch try out later
+            // bearing: 36.00
+            pitch: 0,
+            bearing: 0
+        },
+
+        // hier die felder polygone anzeigen (und reinzoomen???)
+        onChapterEnter: [],
+        onChapterExit: [
+             {
+                 layer: 'potsdam-city-fill',
+                 opacity: 0
+             }
+        ]
+    },
+
+          // first text box
+          {
+            id: 'harrison1998',
+            alignment: 'left',
+            title: 'first textbox: chapter one: agricultural fields',
+            image: '',
+            // wie kann ich im text unterstreichen? 
+            description: 'Here comes the text for the first chapter.',
+            location: {
+                center: [-113.72917, 48.58938],
+                zoom: 12.92,
+                pitch: 39.50,
+                bearing: 36.00
+            },
+  
+            // hier die felder polygone anzeigen (und reinzoomen???)
+            onChapterEnter: [],
+            onChapterExit: [
+                // {
+                //     layer: 'gnpglaciers-2015',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+    
+    {
           // first illustration
           // ??? muss die id geändert werden?
 
@@ -19,7 +73,7 @@ var config = {
           alignment: 'full',
           title: 'first illustration: agricultural fields',
           
-          // ??? wie lädt man ein bild rein? vorher wurde es über einen link auf wikipedia geladen.
+          // pictures are loaded from the assets folder
           image: './assets/0_testillustration.png',
           description: 'description of the illustration if wanted comes here',
           location: {
@@ -47,30 +101,30 @@ var config = {
           ]
       },
 
-      // first text box
-      {
-          id: 'harrison1998',
-          alignment: 'left',
-          title: 'first textbox: chapter one: agricultural fields',
-          image: '',
-          // wie kann ich im text unterstreichen? 
-          description: 'Here comes the text for the first chapter.',
-          location: {
-              center: [-113.72917, 48.58938],
-              zoom: 12.92,
-              pitch: 39.50,
-              bearing: 36.00
-          },
 
-          // hier die felder polygone anzeigen (und reinzoomen???)
-          onChapterEnter: [],
-          onChapterExit: [
-              // {
-              //     layer: 'gnpglaciers-2015',
-              //     opacity: 0
-              // }
-          ]
-      },
+      {
+        id: 'harrison1998',
+        alignment: 'left',
+        title: 'copy: first textbox: chapter one: agricultural fields',
+        image: '',
+        // wie kann ich im text unterstreichen? 
+        description: 'Here comes the text for the first chapter.',
+        location: {
+            center: [-113.72917, 48.58938],
+            zoom: 12.92,
+            pitch: 39.50,
+            bearing: 36.00
+        },
+
+        // hier die felder polygone anzeigen (und reinzoomen???)
+        onChapterEnter: [],
+        onChapterExit: [
+            // {
+            //     layer: 'gnpglaciers-2015',
+            //     opacity: 0
+            // }
+        ]
+    },
 
       // second text box
       {
