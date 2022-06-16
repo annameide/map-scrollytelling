@@ -13,14 +13,14 @@ var config = {
   
   chapters: [
     
-    // introduction  
+    // 1 textbox: introduction  
     {
-        id: 'harrison1998', // in doku gucken, hat eher keinen einfluss
+        id: 'harrison1998', // id HAS TO be unique
         alignment: 'left',
         title: '1 box zero: intoduction',
         image: '',
         // wie kann ich im text unterstreichen? 
-        description: 'Here comes the text for the intoduction. <br><br> try out how much text looks good.',
+        description: 'Here comes the text for the intoduction. <br></br> try out how much text looks good.<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>...',
         location: {
             // look for offset in documentation / center of display 16:9 passt
             center: [12.9184, 52.4496],
@@ -33,10 +33,10 @@ var config = {
 
         // write all layers in here which you want to hide
         onChapterEnter: [
-            //{
-                //layer: 'potsdam-city-fill',
-                //opacity: 0
-            //},
+            {
+                layer: 'potsdam-city-fill',
+                opacity: 0.2
+            },
 
             {
                 layer: 'farmland-landuse',
@@ -55,26 +55,7 @@ var config = {
         ],
 
 
-        onChapterExit: [
-            //{
-            //layer: 'potsdam-city-fill',
-            //opacity: 0
-        //},
-
-        {
-            layer: 'farmland-landuse',
-            opacity: 1
-        },
-
-        {
-            layer: 'allotments-78oelq',
-            opacity: 0
-        },
-        
-        {
-            layer: 'orchard-landuse',
-            opacity: 0
-        } ]
+        onChapterExit: []
     },
 
 
@@ -88,7 +69,7 @@ var config = {
             description: 'Here comes the text for the first chapter.',
             location: {
                 center: [12.9184, 52.4496],
-                zoom: 14,
+                zoom: 10.9,
                 pitch: 0,
                 bearing: 0
                 //pitch: 39.50,
@@ -96,15 +77,15 @@ var config = {
             },
   
             onChapterEnter: [
-                //{
-                //layer: 'potsdam-city-fill',
-                //opacity: 0
-            //},
+            {
+                layer: 'potsdam-city-fill',
+                opacity: 0.2
+            },
 
-            //{
-              //  layer: 'farmland-landuse',
-                //opacity: 0
-            //},
+            {
+                layer: 'farmland-landuse',
+                opacity: 0.5
+            },
 
             {
                 layer: 'allotments-78oelq',
@@ -116,12 +97,7 @@ var config = {
                 opacity: 0
             } 
         ],
-            onChapterExit: [
-                // {
-                //     layer: 'gnpglaciers-2015',
-                //     opacity: 0
-                // }
-            ]
+            onChapterExit: []
         },
 
     
