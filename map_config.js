@@ -35,7 +35,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'potsdam-city-fill',
-                    opacity: 0.2
+                    opacity: 0.4
                 },
 
                 {
@@ -44,7 +44,7 @@ var config = {
                 },
 
                 {
-                    layer: 'allotments-78oelq',
+                    layer: 'parks-leisure',
                     opacity: 0
                 },
 
@@ -58,12 +58,11 @@ var config = {
             onChapterExit: []
         },
 
-
         // 2 text box: agricultural fields / 1
         {
             id: '2--textbox',
             alignment: 'left',
-            title: '2 textbox: agricultural fields / 1',
+            title: '2 textbox: agricultural fields || the wheat / 1',
             image: '',
             // wie kann ich im text unterstreichen? mit span und span style in css geht es nicht. 
             description: 'Here <span>comes the text</span> for the first chapter. <br></br><br></br><br></br><br></br>',
@@ -79,16 +78,16 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'potsdam-city-fill',
-                    opacity: 0.2
+                    opacity: 0.3
                 },
 
                 {
                     layer: 'farmland-landuse',
-                    opacity: 0.5
+                    opacity: 0.7
                 },
 
                 {
-                    layer: 'allotments-78oelq',
+                    layer: 'parks-leisure',
                     opacity: 0
                 },
 
@@ -186,11 +185,11 @@ var config = {
             ]
         },
 
-        // 4 text box: allotment gardens / 1
+        // 4 text box: parks / 1
         {
             id: '4--textbox',
             alignment: 'left',
-            title: '4 text box: allotment gardens / 1',
+            title: '4 text box: UNESCO parks / 1',
             image: '',
             description: 'Here comes the text for the next chapter.',
             location: {
@@ -203,7 +202,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'potsdam-city-fill',
-                    opacity: 0.2
+                    opacity: 0.3
                 },
 
                 {
@@ -212,8 +211,8 @@ var config = {
                 },
 
                 {
-                    layer: 'allotments-78oelq',
-                    opacity: 0.5
+                    layer: 'parks-leisure',
+                    opacity: 0.7
                 },
 
                 {
@@ -224,11 +223,11 @@ var config = {
             onChapterExit: []
         },
 
-        // 5 text box: allotment gardens / 2
+        // 5 text box: parks / 2
         {
             id: '5--textbox',
             alignment: 'left',
-            title: '4 text box: allotment gardens / 2',
+            title: '5 text box: UNESCO parks / 2',
             image: '',
             description: 'Here comes the text for the next chapter.',
             location: {
@@ -241,7 +240,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'potsdam-city-fill',
-                    opacity: 0.2
+                    opacity: 0.3
                 },
 
                 {
@@ -250,8 +249,8 @@ var config = {
                 },
 
                 {
-                    layer: 'allotments-78oelq',
-                    opacity: 0.5
+                    layer: 'parks-leisure',
+                    opacity: 0.7
                 },
 
                 {
@@ -262,38 +261,8 @@ var config = {
             onChapterExit: []
         },
 
-        
+        // second illustration
         {
-            id: 'harrison2015',
-            alignment: 'left',
-            title: 'second text box: allotment fields',
-            image: '',
-            description: 'here comes the text. here comes the text.',
-            location: {
-                center: [12.9184, 52.4300],
-                zoom: 10.9,
-                pitch: 39.50,
-                bearing: 36.00
-            },
-
-            // hier allotment fields polygone anzeigen
-            onChapterEnter: [
-                {
-                    layer: 'gnpglaciers-2015',
-                    opacity: 0.25
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'gnpglaciers-2015',
-                    opacity: 0
-                }
-            ]
-        },
-
-        {
-            // second illustration
-
             id: 'glacier-np',
             alignment: 'full',
             title: 'second illustration: gardens',
@@ -310,27 +279,33 @@ var config = {
 
             onChapterEnter: [
                 {
-                    layer: 'gnpglaciers-1998',
-                    opacity: 0.25
+                    layer: 'potsdam-city-fill',
+                    opacity: 0.3
                 },
+
                 {
-                    layer: 'glaciernp-boundary',
-                    opacity: 0.25
-                }
-            ],
-            onChapterExit: [
+                    layer: 'farmland-landuse',
+                    opacity: 0
+                },
+
                 {
-                    layer: 'glaciernp-boundary',
+                    layer: 'parks-leisure',
+                    opacity: 0.7
+                },
+
+                {
+                    layer: 'orchard-landuse',
                     opacity: 0
                 }
-            ]
+            ],
+            onChapterExit: []
         },
 
-
+        // 6 text box: orchards / 1
         {
-            id: 'blackfoot1998',
+            id: '6--textbox',
             alignment: 'left',
-            title: 'third chapter orchards',
+            title: '6 text box: orchards alexandrovka / 1',
             image: '',
             description: 'Blackfoot Glacier is the second largest of the remaining 25 glaciers in Glacier National Park, Montana. Blackfoot Glacier is just to the north of Blackfoot Mountain and near Jackson Glacier. When first documented in 1850, the glacier also included the now separate Jackson Glacier and together, they covered 1,875 acres (7.59 km2). In 1850, there were an estimated 150 glaciers in the park. Glaciologists have stated that by the year 2030, all the glaciers in the park may disappear.',
             location: {
@@ -343,9 +318,25 @@ var config = {
             onChapterExit: []
         },
 
+        // 7 text box: orchards / 2
         {
-            // second illustration
+            id: '7--textbox',
+            alignment: 'left',
+            title: '7 text box: orchards alexandrovka / 2',
+            image: '',
+            description: 'Blackfoot Glacier is the second largest of the remaining 25 glaciers in Glacier National Park, Montana. Blackfoot Glacier is just to the north of Blackfoot Mountain and near Jackson Glacier. When first documented in 1850, the glacier also included the now separate Jackson Glacier and together, they covered 1,875 acres (7.59 km2). In 1850, there were an estimated 150 glaciers in the park. Glaciologists have stated that by the year 2030, all the glaciers in the park may disappear.',
+            location: {
+                center: [12.9184, 52.4300],
+                zoom: 10.9,
+                pitch: 51.50,
+                bearing: -26.40
+            },
+            onChapterEnter: [],
+            onChapterExit: []
+        },
 
+        // third illustration
+        {
             id: 'glacier-np',
             alignment: 'full',
             title: 'third illustration: orchards',
@@ -378,12 +369,13 @@ var config = {
             ]
         },
 
+        // 8 text box: conclusion / 1
         {
-            id: 'blackfoot2015',
+            id: '8--textbox',
             alignment: 'left',
-            title: 'conclusion',
+            title: '8 text box: conclusion / 1',
             image: '',
-            description: 'here comes the conclusion text.',
+            description: 'here comes the conclusion text....',
             location: {
                 center: [12.9184, 52.4300],
                 zoom: 12.92,
@@ -391,23 +383,15 @@ var config = {
                 bearing: -26.40
             },
             onChapterEnter: [
-                {
-                    layer: 'gnpglaciers-2015',
-                    opacity: 0.25
-                }
             ],
-            onChapterExit: [
-                {
-                    layer: 'gnpglaciers-2015',
-                    opacity: 0
-                }
-            ]
+            onChapterExit: []
         },
 
+        // 9 text box: conclusion / 2
         {
-            id: 'agassiz1998',
+            id: '9--textbox',
             alignment: 'left',
-            title: 'conclusion part 2',
+            title: '9 text box: conclusion / 2',
             image: '',
             description: 'here comes the last part of the conclusion.',
             location: {
@@ -419,9 +403,6 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
-
-
-
 
     ]
 };

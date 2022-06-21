@@ -5,6 +5,7 @@ body {
     margin:0;
     padding:0;
     font-family: sans-serif;
+    color: #251F26;
 }
 
 
@@ -29,17 +30,25 @@ a, a:hover, a:visited {
     width: 100%;
     position: relative;
     z-index: 5;
-}
+    background-color: blueviolet;
+    opacity: 0.5;
 
-h1{
-    color: red;
-    font-size: 3rem;
 }
 
 #header h1, #header h2, #header p {
     margin: 0;
     padding: 2vh 2vw;
     text-align: center;
+    border: 2px solid red;
+    color: black;
+    
+}
+
+h1{
+    font-size: 3rem;
+    /*background-color: yellow;*/
+    opacity: 1;
+    color: black;
 }
 
 #footer {

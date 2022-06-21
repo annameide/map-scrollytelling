@@ -29,7 +29,7 @@
 
 <div id="story"></div>
 
-<script src="./glacier_config.js"></script>
+<script src="./map_config.js"></script>
 
 <script>
 
@@ -85,18 +85,18 @@ map.on("load", function() {
         });
         
         // add the DEM source as a terrain layer with exaggerated height
-        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+        //map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
 
         // add a sky layer that will show when the map is highly pitched
-        map.addLayer({
-            'id': 'sky',
-            'type': 'sky',
-            'paint': {
-                'sky-type': 'atmosphere',
-                'sky-atmosphere-sun': [0.0, 0.0],
-                'sky-atmosphere-sun-intensity': 15
-            }
-        });
+        // map.addLayer({
+        //     'id': 'sky',
+        //     'type': 'sky',
+        //     'paint': {
+        //         'sky-type': 'atmosphere',
+        //         'sky-atmosphere-sun': [0.0, 0.0],
+        //         'sky-atmosphere-sun-intensity': 15
+        //     }
+        // });
     };
 
     // setup the instance, pass callback functions
