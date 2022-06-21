@@ -23,8 +23,8 @@ var config = {
             description: 'Here comes the text for the intoduction. <br></br> try out how much text looks good.<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>...',
             location: {
                 // look for offset in documentation / center of display 16:9 passt
-                center: [12.9184, 52.4300],
-                zoom: 10.9,
+                center: [13.0538, 52.3888],
+                zoom: 14,
                 // pitch: 39.50, nice touch try out later
                 // bearing: 36.00
                 pitch: 0,
@@ -36,6 +36,11 @@ var config = {
                 {
                     layer: 'potsdam-city-fill',
                     opacity: 0.4
+                },
+
+                {
+                    layer: 'habitat',
+                    opacity: 1
                 },
 
                 {
@@ -53,10 +58,57 @@ var config = {
                     opacity: 0
                 }
             ],
-
-
             onChapterExit: []
         },
+
+        // 1.2 textbox: introduction  
+        {
+            id: '12--introduction', // id HAS TO be unique
+            alignment: 'left',
+            title: '1.2 text box: intoduction',
+            image: '',
+            // wie kann ich im text unterstreichen? 
+            description: 'Here comes the text for the intoduction. <br></br> try out how much text looks good.<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>...',
+            location: {
+                // look for offset in documentation / center of display 16:9 passt
+                center: [12.9184, 52.4300],
+                zoom: 10.9,
+                // pitch: 39.50, nice touch try out later
+                // bearing: 36.00
+                pitch: 0,
+                bearing: 0
+            },
+
+            // here come layers which you want to hide or show
+            onChapterEnter: [
+                {
+                    layer: 'potsdam-city-fill',
+                    opacity: 0.4
+                },
+
+                {
+                    layer: 'habitat',
+                    opacity: 0
+                },
+
+                {
+                    layer: 'farmland-landuse',
+                    opacity: 0
+                },
+
+                {
+                    layer: 'parks-leisure',
+                    opacity: 0
+                },
+
+                {
+                    layer: 'orchard-landuse',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: []
+        },
+        
 
         // 2 text box: agricultural fields / 1
         {
@@ -124,7 +176,7 @@ var config = {
 
                 {
                     layer: 'farmland-landuse',
-                    opacity: 0.5
+                    opacity: 0.7
                 },
 
                 {
@@ -144,11 +196,11 @@ var config = {
         {
             id: '1--illustration',
             alignment: 'full', // ??? wie illu etwas kleiner 90% ging nicht.
-            title: 'first illustration: agricultural fields',
+            title: '',
 
             // pictures are loaded from the assets folder
-            image: './assets/0_testillustration.png',
-            description: 'description of the illustration if wanted comes here',
+            image: './assets/2-illu.png',
+            description: '',
             location: {
                 center: [12.9184, 52.4300],
                 zoom: 12,
@@ -265,11 +317,11 @@ var config = {
         {
             id: 'glacier-np',
             alignment: 'full',
-            title: 'second illustration: gardens',
+            title: '',
 
             // pictures are loaded from the assets folder
             image: './assets/2_illustration.png',
-            description: 'description of the illustration if wanted comes here',
+            description: '',
             location: {
                 center: [12.9184, 52.4300],
                 zoom: 10.9,
@@ -314,7 +366,27 @@ var config = {
                 pitch: 51.50,
                 bearing: -26.40
             },
-            onChapterEnter: [],
+            onChapterEnter: [
+                {
+                    layer: 'potsdam-city-fill',
+                    opacity: 0.3
+                },
+
+                {
+                    layer: 'farmland-landuse',
+                    opacity: 0
+                },
+
+                {
+                    layer: 'parks-leisure',
+                    opacity: 0
+                },
+
+                {
+                    layer: 'orchard-landuse',
+                    opacity: 0.7
+                }
+            ],
             onChapterExit: []
         },
 
@@ -327,11 +399,31 @@ var config = {
             description: 'Blackfoot Glacier is the second largest of the remaining 25 glaciers in Glacier National Park, Montana. Blackfoot Glacier is just to the north of Blackfoot Mountain and near Jackson Glacier. When first documented in 1850, the glacier also included the now separate Jackson Glacier and together, they covered 1,875 acres (7.59 km2). In 1850, there were an estimated 150 glaciers in the park. Glaciologists have stated that by the year 2030, all the glaciers in the park may disappear.',
             location: {
                 center: [12.9184, 52.4300],
-                zoom: 10.9,
+                zoom: 12,
                 pitch: 51.50,
                 bearing: -26.40
             },
-            onChapterEnter: [],
+            onChapterEnter: [
+                {
+                    layer: 'potsdam-city-fill',
+                    opacity: 0.3
+                },
+
+                {
+                    layer: 'farmland-landuse',
+                    opacity: 0
+                },
+
+                {
+                    layer: 'parks-leisure',
+                    opacity: 0
+                },
+
+                {
+                    layer: 'orchard-landuse',
+                    opacity: 0.7
+                }
+            ],
             onChapterExit: []
         },
 
@@ -339,11 +431,11 @@ var config = {
         {
             id: 'glacier-np',
             alignment: 'full',
-            title: 'third illustration: orchards',
+            title: '',
 
             // pictures are loaded from the assets folder
             image: './assets/2_illustration.png',
-            description: 'description of the illustration if wanted comes here',
+            description: '',
             location: {
                 center: [12.9184, 52.4300],
                 zoom: 12,
@@ -378,11 +470,30 @@ var config = {
             description: 'here comes the conclusion text....',
             location: {
                 center: [12.9184, 52.4300],
-                zoom: 12.92,
+                zoom: 10.5,
                 pitch: 51.50,
                 bearing: -26.40
             },
             onChapterEnter: [
+                {
+                layer: 'potsdam-city-fill',
+                opacity: 0.3
+            },
+
+            {
+                layer: 'farmland-landuse',
+                opacity: 0.7
+            },
+
+            {
+                layer: 'parks-leisure',
+                opacity: 0.7
+            },
+
+            {
+                layer: 'orchard-landuse',
+                opacity: 0.7
+            }
             ],
             onChapterExit: []
         },
@@ -396,7 +507,7 @@ var config = {
             description: 'here comes the last part of the conclusion.',
             location: {
                 center: [12.9184, 52.4300],
-                zoom: 13.51,
+                zoom: 10.5,
                 pitch: 41.00,
                 bearing: 78.33
             },
