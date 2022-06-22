@@ -68,7 +68,7 @@ var config = {
             title: '1.2 text box: intoduction',
             image: '',
             // wie kann ich im text unterstreichen? 
-            description: 'Here comes the text for the intoduction. <br></br> try out how much text looks good.<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>...',
+            description: 'Here comes <u> the text </u> for the intoduction. <br></br> try out how much text looks good.<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>...',
             location: {
                 // look for offset in documentation / center of display 16:9 passt
                 center: [12.9184, 52.4300],
@@ -194,7 +194,7 @@ var config = {
 
         // 1 illustration: agricultural fields
         {
-            id: '1--illustration',
+            id: '_1--illustration',
             alignment: 'full', // ??? wie illu etwas kleiner 90% ging nicht.
             title: '',
 
