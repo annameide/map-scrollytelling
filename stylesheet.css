@@ -218,33 +218,48 @@ a, a:hover, a:visited {
 
 h1{
     font-size: 4rem;
+    font-family: Vollkorn;
+    font-weight: 800;
 }
 
 h2{
     font-size: 2.5rem;
+    font-family: Vollkorn;
+    font-weight: 500;
 }
 
 h3 {
     color: #251F26;
     font-size: 1.8rem;
+    font-family: Vollkorn;
+    font-weight: 400;
 }
 
 p {
     font-size: 1.125rem;
+    font-family: Vollkorn;
+    font-weight: 400;
 }
 
 #footer {
     width: 100%;
     min-height: 5vh;
-    padding-top: 2vh;
+    padding-top: 3vh;
     padding-bottom: 2vh;
     text-align: center;
     line-height: 25px;
-    font-size: 13px;
     position: relative;
     z-index: 5;
     background-color: #251F26;
+    
+}
+
+#footer p {
+    width: 40%;
     color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0 auto;
 }
         
 #features {
