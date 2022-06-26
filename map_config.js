@@ -17,10 +17,10 @@ var config = {
         {
             id: '1--introduction', // id HAS TO be unique
             alignment: 'left',
-            title: '1 text box: intoduction',
+            title: 'Potsdamer Havel Lebensbunker Nr. 42',
             image: '',
             // wie kann ich im text unterstreichen? 
-            description: 'Here comes the text for the intoduction. <br></br> try out how much text looks good.<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>...',
+            description: 'Aurora arrived in her accomodations in Potsdam, Germany midsummer. The weather was awefull – glistening sunlight, unbearable heat of +42C and a sandstorm raging for days made it hard to breath. “Potsdamer Havel Lebensbunker Nr. 42” read the Address on the provided keychain. A silent “wow” crossed Auroras mind, it has been this for almost 10 years around the world now but for her it was still a strange feeling to live in a dried out lake. Especially because she remembered the photographs of her German grandmother bathing in this same lake in 2022. 2072 the precious water was harvested and rationalized by the european government. Water for ordinary civilians was only available for drinking. <br></br>“Well,” - Aurora said “that’s 50 years of climate catastrophy for you”, opened the elevator door and went down to the cooler sub levels of the Lebensbunker.',
             location: {
                 // look for offset in documentation / center of display 16:9 passt
                 center: [13.0538, 52.3888],
