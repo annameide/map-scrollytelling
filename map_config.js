@@ -65,10 +65,10 @@ var config = {
         {
             id: '12--introduction', // id HAS TO be unique
             alignment: 'left',
-            title: 'The Brandenburg climate disaster',
+            title: 'The Brandenburg steppe',
             image: '',
             // wie kann ich im text unterstreichen? 
-            description: 'Here comes <u> the text </u> for the intoduction. <br></br> try out how much text looks good.<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>...',
+            description: 'The welcome basket contained the obligatory bottle of water and one of the famous Potsdam Melons. The slogan “Grown locally – consumed globally” however, only conveyed a partial truth about the food supply of the remaining world population.',
             location: {
                 // look for offset in documentation / center of display 16:9 passt
                 center: [12.9184, 52.4300],
@@ -114,7 +114,7 @@ var config = {
         {
             id: '2--textbox',
             alignment: 'left',
-            title: '2 textbox: agricultural fields || the wheat / 1',
+            title: 'The chickpea and the drone',
             image: '',
             // wie kann ich im text unterstreichen? mit span und span style in css geht es nicht. 
             description: 'Here <span>comes the text</span> for the first chapter. <br></br><br></br><br></br><br></br>',
@@ -193,49 +193,49 @@ var config = {
         },
 
         // 1 illustration: agricultural fields
-        {
-            id: '_1--illustration',
-            alignment: 'full', // ??? wie illu etwas kleiner 90% ging nicht.
-            title: '',
+        // {
+        //     id: '_1--illustration',
+        //     alignment: 'full', // ??? wie illu etwas kleiner 90% ging nicht.
+        //     title: '',
 
-            // pictures are loaded from the assets folder
-            image: './assets/2-illu.png',
-            description: '',
-            location: {
-                center: [12.9184, 52.4300],
-                zoom: 12,
-                pitch: 0.00,
-                bearing: 0.00
-            },
+        //     // pictures are loaded from the assets folder
+        //     image: './assets/2-illu.png',
+        //     description: '',
+        //     location: {
+        //         center: [12.9184, 52.4300],
+        //         zoom: 12,
+        //         pitch: 0.00,
+        //         bearing: 0.00
+        //     },
 
-            onChapterEnter: [
-                //{
-                //layer: 'potsdam-city-fill',
-                //opacity: 0
-                //},
+        //     onChapterEnter: [
+        //         //{
+        //         //layer: 'potsdam-city-fill',
+        //         //opacity: 0
+        //         //},
 
-                //{
-                //  layer: 'farmland-landuse',
-                //opacity: 0
-                //},
+        //         //{
+        //         //  layer: 'farmland-landuse',
+        //         //opacity: 0
+        //         //},
 
-                {
-                    layer: 'allotments-78oelq',
-                    opacity: 0
-                },
+        //         {
+        //             layer: 'allotments-78oelq',
+        //             opacity: 0
+        //         },
 
-                {
-                    layer: 'orchard-landuse',
-                    opacity: 0
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'glaciernp-boundary',
-                    opacity: 0
-                }
-            ]
-        },
+        //         {
+        //             layer: 'orchard-landuse',
+        //             opacity: 0
+        //         }
+        //     ],
+        //     onChapterExit: [
+        //         {
+        //             layer: 'glaciernp-boundary',
+        //             opacity: 0
+        //         }
+        //     ]
+        // },
 
         // 4 text box: parks / 1
         {
