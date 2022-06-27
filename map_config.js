@@ -61,6 +61,46 @@ var config = {
             onChapterExit: []
         },
 
+        // 1 illustration: introduction
+        {
+            id: '_01--illustration',
+            alignment: 'right',
+            title: '',
+
+            // pictures are loaded from the assets folder
+            image: './assets/0_testillustration.png',
+            description: '',
+            location: {
+                center: [12.9184, 52.4300],
+                zoom: 12,
+                pitch: 0.00,
+                bearing: 0.00
+            },
+
+            onChapterEnter: [
+                //{
+                //layer: 'potsdam-city-fill',
+                //opacity: 0
+                //},
+
+                //{
+                //  layer: 'farmland-landuse',
+                //opacity: 0
+                //},
+
+                {
+                    layer: 'allotments-78oelq',
+                    opacity: 0
+                },
+
+                {
+                    layer: 'orchard-landuse',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: []
+        },
+
         // 1.2 textbox: introduction  
         {
             id: '12--introduction', // id HAS TO be unique
@@ -193,49 +233,44 @@ var config = {
         },
 
         // 1 illustration: agricultural fields
-        // {
-        //     id: '_1--illustration',
-        //     alignment: 'full', // ??? wie illu etwas kleiner 90% ging nicht.
-        //     title: '',
+        {
+            id: '_1--illustration',
+            alignment: 'right',
+            title: '',
 
-        //     // pictures are loaded from the assets folder
-        //     image: './assets/2-illu.png',
-        //     description: '',
-        //     location: {
-        //         center: [12.9184, 52.4300],
-        //         zoom: 12,
-        //         pitch: 0.00,
-        //         bearing: 0.00
-        //     },
+            // pictures are loaded from the assets folder
+            image: './assets/0_testillustration',
+            description: '',
+            location: {
+                center: [12.9184, 52.4300],
+                zoom: 12,
+                pitch: 0.00,
+                bearing: 0.00
+            },
 
-        //     onChapterEnter: [
-        //         //{
-        //         //layer: 'potsdam-city-fill',
-        //         //opacity: 0
-        //         //},
+            onChapterEnter: [
+                //{
+                //layer: 'potsdam-city-fill',
+                //opacity: 0
+                //},
 
-        //         //{
-        //         //  layer: 'farmland-landuse',
-        //         //opacity: 0
-        //         //},
+                //{
+                //  layer: 'farmland-landuse',
+                //opacity: 0
+                //},
 
-        //         {
-        //             layer: 'allotments-78oelq',
-        //             opacity: 0
-        //         },
+                {
+                    layer: 'allotments-78oelq',
+                    opacity: 0
+                },
 
-        //         {
-        //             layer: 'orchard-landuse',
-        //             opacity: 0
-        //         }
-        //     ],
-        //     onChapterExit: [
-        //         {
-        //             layer: 'glaciernp-boundary',
-        //             opacity: 0
-        //         }
-        //     ]
-        // },
+                {
+                    layer: 'orchard-landuse',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: []
+        },
 
         // 4 text box: parks / 1
         {

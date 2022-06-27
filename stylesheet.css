@@ -296,8 +296,10 @@ p {
     background-color: #fafafa;
 }
 
-#_1--illustration .light {
+#_01--illustration .light {
  background-color: transparent;
+ width: 100%;
+ 
 }
         
 .dark {
