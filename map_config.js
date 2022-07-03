@@ -110,71 +110,35 @@ var config = {
     },
 
     // 1. illustration
-    // {
-    //   id: "_01--illustration",
-    //   alignment: "right",
-    //   title: "",
-
-    //   // pictures are loaded from the assets folder
-    //   image: "./assets/2_testillu.png",
-    //   description: "",
-    //   location: {
-    //     center: [12.9184, 52.43],
-    //     zoom: 12,
-    //     pitch: 0.0,
-    //     bearing: 0.0,
-    //   },
-
-    //   onChapterEnter: [
-    //     //{
-    //     //layer: 'potsdam-city-fill',
-    //     //opacity: 0
-    //     //},
-
-    //     //{
-    //     //  layer: 'farmland-landuse',
-    //     //opacity: 0
-    //     //},
-
-    //     {
-    //       layer: "allotments-78oelq",
-    //       opacity: 0,
-    //     },
-
-    //     {
-    //       layer: "orchard-landuse",
-    //       opacity: 0,
-    //     },
-    //   ],
-    //   onChapterExit: [],
-    // },
-
-    // 3. text box
     {
-      id: "3--textbox",
+      id: "_1--illustration",
       alignment: "left",
       title: "",
-      image: "",
-      description:
-        "Aurora has been working as a seed tracker for the UNDRR (United Nations Office for Disaster Risk Reduction) for three years now. As a trained botanist she took part in the “Floras Mercy” project. Her job was to travel still inhabitable areas of Europe and collect data on indigenous plant life present in a particular region and time.",
+
+      // pictures are loaded from the assets folder
+      image: "./assets/melons.png",
+      description: "",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 10.9,
-        pitch: 0,
-        bearing: 0,
-        //pitch: 39.50,
-        //bearing: 36.00
+        center: [13.0567, 52.3888],
+        zoom: 14,
+        pitch: 0.0,
+        bearing: 0.0,
       },
 
       onChapterEnter: [
         {
           layer: "potsdam-city-fill",
-          opacity: 0.3,
+          opacity: 0.4,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 1,
         },
 
         {
           layer: "farmland-landuse",
-          opacity: 0.7,
+          opacity: 0,
         },
 
         {
@@ -190,17 +154,17 @@ var config = {
       onChapterExit: [],
     },
 
-    // 4. text box
+    // 3. text box
     {
-      id: "4--textbox",
+      id: "3--textbox",
       alignment: "left",
       title: "",
       image: "",
       description:
-        "The disaster to be reduced was famine and malnutrition. At the onset of the 21. century in addition to man-made climate change came man-made diversity deficiency. At least 75% of the world’s crops have been lost, mainly through the breeding of f1 hybrids. Monocultures replaced diversity: of 7.000 edible crop species, fewer than 200 contributed to global food production. Wheat, rice and corn provided 60% of the world's calories and were optimized for output, not climate adaptation, which made them vulnerable to disasters.",
+        "Aurora has been working as a seed tracker for the UNDRR (United Nations Office for Disaster Risk Reduction) for three years now. As a trained botanist she took part in the “Floras Mercy” project. Her job was to travel still inhabitable areas of Europe and collect data on indigenous plant life present in a particular region and time.",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 12,
+        center: [12.9184, 53.0],
+        zoom: 7.5,
         pitch: 0,
         bearing: 0,
         //pitch: 39.50,
@@ -210,16 +174,145 @@ var config = {
       onChapterEnter: [
         {
           layer: "potsdam-city-fill",
-          opacity: 0.2,
+          opacity: 0.5,
         },
 
         {
           layer: "farmland-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [],
+    },
+
+    // 4. text box
+    {
+      id: "4--textbox",
+      alignment: "left",
+      title: "",
+      image: "",
+      description:
+        "The disaster to be reduced was famine and malnutrition. At the onset of the 21. century in addition to man-made climate change came man-made diversity deficiency. At least 75% of the world’s crops have been lost, mainly through the breeding of f1 hybrids. Monocultures replaced diversity: of 7.000 edible crop species, fewer than 200 contributed to global food production. Wheat, rice and corn provided 60% of the world's calories and were optimized for output, not climate adaptation, which made them vulnerable to disasters.",
+      location: {
+        center: [12.9184, 53.0],
+        zoom: 3.5,
+        pitch: 0,
+        bearing: 0,
+        //pitch: 39.50,
+        //bearing: 36.00
+      },
+
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [],
+    },
+
+    // 5. text box
+    {
+      id: "5--textbox",
+      alignment: "left",
+      title: "",
+      image: "",
+      description:
+        "And now the world was in dire need of more diverse plant genetic resources. Science had to imitate nature in its free play, which was very resource consuming. The reserves of the world's gene banks for seeds were being used up faster than anticipated due to the completely unpredictable effects of climate change and extreme events such as the major insect die-off. Planning certainty was over.",
+      location: {
+        center: [12.9184, 52.43],
+        zoom: 1.5,
+        pitch: 0,
+        bearing: 0,
+      },
+
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.3,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "parks-leisure",
           opacity: 0.7,
         },
 
         {
-          layer: "allotments-78oelq",
+          layer: "orchard-landuse",
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [],
+    },
+
+    // 6. text box
+    {
+      id: "6--textbox",
+      alignment: "right",
+      title: "The Brandenburg Steppe",
+      image: "",
+      description:
+        "2072 the world fell victim to the same scientific facts as 2022 - climate change became the greatest challenge ever faced by mankind. The 1.5 degree threshold was exceeded in 2026 and plunged the entire planet ecologically and socially into the “Risk Age”, a dangerous and uncontrollable mix of environmental and security risks. And policymakers still did not listen to science.",
+      location: {
+        center: [12.9184, 52.43],
+        zoom: 12,
+        pitch: 39.5,
+        bearing: 36.0,
+      },
+
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "parks-leisure",
           opacity: 0,
         },
 
@@ -270,84 +363,6 @@ var config = {
     //   ],
     //   onChapterExit: [],
     // },
-
-    // 5. text box
-    {
-      id: "5--textbox",
-      alignment: "right",
-      title: "",
-      image: "",
-      description:
-        "And now the world was in dire need of more diverse plant genetic resources. Science had to imitate nature in its free play, which was very resource consuming. The reserves of the world's gene banks for seeds were being used up faster than anticipated due to the completely unpredictable effects of climate change and extreme events such as the major insect die-off. Planning certainty was over.",
-      location: {
-        center: [12.9184, 52.43],
-        zoom: 10.9,
-        pitch: 39.5,
-        bearing: 36.0,
-      },
-
-      onChapterEnter: [
-        {
-          layer: "potsdam-city-fill",
-          opacity: 0.3,
-        },
-
-        {
-          layer: "farmland-landuse",
-          opacity: 0,
-        },
-
-        {
-          layer: "parks-leisure",
-          opacity: 0.7,
-        },
-
-        {
-          layer: "orchard-landuse",
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [],
-    },
-
-    // 6. text box
-    {
-      id: "6--textbox",
-      alignment: "left",
-      title: "The Brandenburg Steppe",
-      image: "",
-      description:
-        "2072 the world fell victim to the same scientific facts as 2022 - climate change became the greatest challenge ever faced by mankind. The 1.5 degree threshold was exceeded in 2026 and plunged the entire planet ecologically and socially into the “Risk Age”, a dangerous and uncontrollable mix of environmental and security risks. And policymakers still did not listen to science.",
-      location: {
-        center: [12.9184, 52.43],
-        zoom: 12,
-        pitch: 39.5,
-        bearing: 36.0,
-      },
-
-      onChapterEnter: [
-        {
-          layer: "potsdam-city-fill",
-          opacity: 0.3,
-        },
-
-        {
-          layer: "farmland-landuse",
-          opacity: 0,
-        },
-
-        {
-          layer: "parks-leisure",
-          opacity: 0.7,
-        },
-
-        {
-          layer: "orchard-landuse",
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [],
-    },
 
     // 3. illustration
     // {
