@@ -15,7 +15,7 @@ var config = {
   chapters: [
     // 1. textbox
     {
-      id: "1--introduction", // id HAS TO be unique
+      id: "1--textbox", // id HAS TO be unique
       alignment: "left",
       title: "Klimabunker Nr. 42",
       image: "",
@@ -23,7 +23,55 @@ var config = {
         "Aurora arrived in her accomodations in Potsdam midsummer. The weather was relatively mild – the average +42°C, glistering sunlight and a looming sandstorm on the horizon.",
       location: {
         // look for offset in documentation / center of display 16:9 passt
-        center: [13.0538, 52.3888],
+        center: [12.9, 52.4399],
+        zoom: 10.9,
+        // pitch: 39.50, nice touch try out later
+        // bearing: 36.00
+        pitch: 0,
+        bearing: 0,
+      },
+
+      // here come layers which you want to hide or show
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.4,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [],
+    },
+
+    // 2. textbox
+    {
+      id: "2--textbox",
+      alignment: "right",
+      title: "",
+      image: "",
+      description:
+        "The address on the keychain read “Potsdamer Havel – Klimabunker Nr. 42, 14473 Potsdam”. More than a decade has passed since the Great Climate Evacuation and the draining of city lakes to provide enough living space for the remaining world population. The scarce resource water was harvested and rationalized by the European Branch of the United Nations. Today water for ordinary civilians was only available for drinking. <br></br> Aurora turned the key and took the elevator underground to the naturally conditioned sub levels of the Klimabunker. The ad for Potsdam’s famous Melons started playing. It’s slogan “Grown locally – consumed globally” however, only conveyed a partial truth about the food supply of the remaining world population in 2072.",
+      location: {
+        // look for offset in documentation / center of display 16:9 passt
+        center: [13.0567, 52.3888],
         zoom: 14,
         // pitch: 39.50, nice touch try out later
         // bearing: 36.00
@@ -100,54 +148,6 @@ var config = {
     //   ],
     //   onChapterExit: [],
     // },
-
-    // 2. textbox
-    {
-      id: "2--introduction",
-      alignment: "right",
-      title: "",
-      image: "",
-      description:
-        "The address on the keychain read “Potsdamer Havel – Klimabunker Nr. 42, 14473 Potsdam”. More than a decade has passed since the Great Climate Evacuation and the draining of city lakes to provide enough living space for the remaining world population. The scarce resource water was harvested and rationalized by the European Branch of the United Nations. Today water for ordinary civilians was only available for drinking. <br></br> Aurora turned the key and took the elevator underground to the naturally conditioned sub levels of the Klimabunker. The ad for Potsdam’s famous Melons started playing. It’s slogan “Grown locally – consumed globally” however, only conveyed a partial truth about the food supply of the remaining world population in 2072.",
-      location: {
-        // look for offset in documentation / center of display 16:9 passt
-        center: [12.9184, 52.43],
-        zoom: 10.9,
-        // pitch: 39.50, nice touch try out later
-        // bearing: 36.00
-        pitch: 0,
-        bearing: 0,
-      },
-
-      // here come layers which you want to hide or show
-      onChapterEnter: [
-        {
-          layer: "potsdam-city-fill",
-          opacity: 0.4,
-        },
-
-        {
-          layer: "habitat",
-          opacity: 0,
-        },
-
-        {
-          layer: "farmland-landuse",
-          opacity: 0,
-        },
-
-        {
-          layer: "parks-leisure",
-          opacity: 0,
-        },
-
-        {
-          layer: "orchard-landuse",
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [],
-    },
 
     // 3. text box
     {
@@ -800,8 +800,8 @@ var config = {
       location: {
         center: [12.9184, 52.43],
         zoom: 10.5,
-        pitch: 41.0,
-        bearing: 78.33,
+        pitch: 0,
+        bearing: 0,
       },
       onChapterEnter: [],
       onChapterExit: [],
