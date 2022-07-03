@@ -940,7 +940,7 @@ var config = {
 
         {
           layer: "orchard-landuse",
-          opacity: 1,
+          opacity: 0.5,
         },
 
         {
@@ -960,7 +960,7 @@ var config = {
 
         {
           layer: "allotments-78oelq",
-          opacity: 1,
+          opacity: 0.5,
         },
       ],
       onChapterExit: [],
@@ -1033,8 +1033,8 @@ var config = {
       description:
         "2072 Cultivation shifted to apricots, kiwis, nectarines, ginger, sea buckthorn, physalis, melons and sun-loving grape varieties. <br></br>“Wouldn’t say no to a Swedish Merlot” – Aurora murmured to herself, sweating in her sunprotection suite. 2072 it was Skandinavia that provided the world with wine.",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 10.5,
+        center: [13.0609, 52.4225],
+        zoom: 17,
         pitch: 41.0,
         bearing: 78.33,
       },
