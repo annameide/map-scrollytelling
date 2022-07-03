@@ -480,21 +480,27 @@ var config = {
     // 8. text box
     {
       id: "8--textbox",
-      alignment: "left",
+      alignment: "right",
       title: "",
       image: "",
       description:
         "A comparison of the satellite images confirmed Aurora's assumption that Brandenburg was a temperate zone before climate change transformed the region into a steppe.",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 12,
-        pitch: 51.5,
-        bearing: -26.4,
+        center: [13.1, 52.43],
+        zoom: 7.7,
+        pitch: 39.5,
+        bearing: 20.0,
       },
+
       onChapterEnter: [
         {
           layer: "potsdam-city-fill",
-          opacity: 0.3,
+          opacity: 0.7,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0.5,
         },
 
         {
@@ -509,7 +515,12 @@ var config = {
 
         {
           layer: "orchard-landuse",
-          opacity: 0.7,
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
         },
       ],
       onChapterExit: [],
@@ -558,30 +569,40 @@ var config = {
       description:
         "Aurora was sent to Potsdam because her boss got a tip about an association active in the early 2020s dedicated to the preservation of ancient crops. If she could track them down, she might get a whole treasure trove of lost edible crop seeds. She decided to go to once vital planting sites across the city and talk to people there.",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 10.5,
+        center: [13.15, 52.43],
+        zoom: 11.4,
         pitch: 51.5,
         bearing: -26.4,
       },
       onChapterEnter: [
         {
           layer: "potsdam-city-fill",
-          opacity: 0.3,
+          opacity: 0.5,
         },
 
         {
           layer: "farmland-landuse",
-          opacity: 0.7,
+          opacity: 0,
         },
 
         {
           layer: "parks-leisure",
-          opacity: 0.7,
+          opacity: 0,
         },
 
         {
           layer: "orchard-landuse",
-          opacity: 0.7,
+          opacity: 0,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
         },
       ],
       onChapterExit: [],
@@ -597,11 +618,41 @@ var config = {
         "Aurora put on her sun protection suit and drove to Bornim. In the northwest of Potsdam were the so-called open-laboratory fields, which functioned like time machines and allowed large-scale experiments with different crops in the climate of the future or the past. <br></br> Agricultural scientists from the Leibnitz Institute reconstructed environmental conditions, using enormous amounts of energy to revive varieties that had long been extinct. They gave their very best to adapt the crops to present conditions in a fast-forward mode.",
       location: {
         center: [12.9184, 52.43],
-        zoom: 10.5,
-        pitch: 41.0,
-        bearing: 78.33,
+        zoom: 11,
+        pitch: 0,
+        bearing: 0,
       },
-      onChapterEnter: [],
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0.7,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
+        },
+      ],
       onChapterExit: [],
     },
 
@@ -614,48 +665,47 @@ var config = {
       description:
         "On the confiscated World Food Program fields however, pure monocultures were grown . Aurora put on her helmet. Holograms of wheat swaying in the wind were superimposed over the plastic-penetrated, artificially irrigated chickpea fields monitored by drones. <br></br> Googles DataVizZard AI generated a detailed hologram of the surroundings using satellite images, smartphone photos from the ‘20s and other geolocation meta data. <br></br>'Wheat is good. We might grow it in Alaska if adopted correctly.' - Aurora thought. <br></br>A recovery team had to be ordered quickly. Perhaps old varieties could be tracked down in the deeper sandy, rocky earth layers.",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 10.5,
-        pitch: 41.0,
-        bearing: 78.33,
+        center: [13.0125, 52.43844],
+        zoom: 12,
+        pitch: 0,
+        bearing: 0,
       },
-      onChapterEnter: [],
-      onChapterExit: [],
-    },
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.3,
+        },
 
-    // 12. text box
-    {
-      id: "12--textbox",
-      alignment: "right",
-      title: "",
-      image: "",
-      description:
-        "Over time, cereals such as wheat and rye, as well as corn, disappeared completely from Brandenburg agriculture. The soil became too dry and the harvests were increasingly poor in nutrients, so that the danger of malnutrition became greater. <br></br>Chickpeas were the main crop grown now. Millet, buckwheat, soybeans and sweet potatoes also found their way in. By 2072, crops were growing in Potsdam that had previously been native to the Middle East or North Africa. Germany, which until the 2020s had been famous for its bread-baking culture, became increasingly known for hummus. The Middle East and North Africa were not so lucky. These regions became lifeless, sterile deserts. <br></br>Aurora went inside the institute but the scientists had no useful information for her.  ",
-      location: {
-        center: [12.9184, 52.43],
-        zoom: 10.5,
-        pitch: 41.0,
-        bearing: 78.33,
-      },
-      onChapterEnter: [],
-      onChapterExit: [],
-    },
+        {
+          layer: "leibnitzinstitut",
+          opacity: 1,
+        },
 
-    // 13. text box
-    {
-      id: "13--textbox",
-      alignment: "left",
-      title: "ICU Tree Patients",
-      image: "",
-      description:
-        "Siri went on with her story and explained that back in the ‘20s Potsdam was famous for it’s UNESCO Natural World Heritage. <br></br>“A place like the famous Park Sanssouci must have inspired a ton of people to collect some flowers and maybe even seeds” - Aurora thought.",
-      location: {
-        center: [12.9184, 52.43],
-        zoom: 10.5,
-        pitch: 41.0,
-        bearing: 78.33,
-      },
-      onChapterEnter: [],
+        {
+          layer: "farmland-landuse",
+          opacity: 0.3,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
+        },
+      ],
       onChapterExit: [],
     },
 
