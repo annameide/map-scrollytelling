@@ -57,6 +57,11 @@ var config = {
           layer: "orchard-landuse",
           opacity: 0,
         },
+
+        {
+          layer: "brandenburg",
+          opacity: 0,
+        },
       ],
       onChapterExit: [],
     },
@@ -281,6 +286,16 @@ var config = {
           layer: "orchard-landuse",
           opacity: 0,
         },
+
+        {
+          layer: "brandenburg",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0.5,
+        },
       ],
       onChapterExit: [],
     },
@@ -294,16 +309,21 @@ var config = {
       description:
         "2072 the world fell victim to the same scientific facts as 2022 - climate change became the greatest challenge ever faced by mankind. The 1.5 degree threshold was exceeded in 2026 and plunged the entire planet ecologically and socially into the “Risk Age”, a dangerous and uncontrollable mix of environmental and security risks. And policymakers still did not listen to science.",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 12,
+        center: [13.1, 52.43],
+        zoom: 7.7,
         pitch: 39.5,
-        bearing: 36.0,
+        bearing: 20.0,
       },
 
       onChapterEnter: [
         {
           layer: "potsdam-city-fill",
-          opacity: 0,
+          opacity: 0.7,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0.5,
         },
 
         {
@@ -318,6 +338,10 @@ var config = {
 
         {
           layer: "orchard-landuse",
+          opacity: 0,
+        },
+        {
+          layer: "habitat",
           opacity: 0,
         },
       ],
@@ -413,15 +437,21 @@ var config = {
       description:
         "Aurora hooked up her Siri-Helmet to the underground WiFi. <br></br>“Ok, Siri. Let’s see what happend here. Tell me what climate change factors had a particularly strong impact on the Brandenburg region.” <br></br> Siri rendered a list and read it out loud:<ul><li>Warmer annual mean temperature</li><li>Sharp decrease in precipitation such as rain and snow</li><li>Forest dieback and devastating forest fires</li><li>Increasing storm events with tornadoes and hail</li><li>Heat waves and heat stress in spring and summer</li><li>Increase in weather extremes such as prolonged droughts and short but violent heavy rains resulting in floods</li><li>Loss of groundwater</li><li>Immigration of heat-loving animal and plant species, spread of neobiota bringing new pathogens and pests </li><li>Unpredictable weather events</li></ul> “Sounds familiar” Aurora thought “one either drowned or was scorched by the sun.”",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 10.9,
-        pitch: 51.5,
-        bearing: -26.4,
+        center: [13.1, 52.43],
+        zoom: 7.7,
+        pitch: 39.5,
+        bearing: 20.0,
       },
+
       onChapterEnter: [
         {
           layer: "potsdam-city-fill",
-          opacity: 0.3,
+          opacity: 0.7,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0.5,
         },
 
         {
@@ -436,7 +466,11 @@ var config = {
 
         {
           layer: "orchard-landuse",
-          opacity: 0.7,
+          opacity: 0,
+        },
+        {
+          layer: "habitat",
+          opacity: 0,
         },
       ],
       onChapterExit: [],
