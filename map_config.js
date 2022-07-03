@@ -67,6 +67,11 @@ var config = {
           layer: "brandenburg",
           opacity: 0,
         },
+
+        {
+          layer: "allotments-78oelq",
+          opacity: 0,
+        },
       ],
       onChapterExit: [],
     },
@@ -915,7 +920,7 @@ var config = {
         center: [12.9184, 52.43],
         zoom: 10.5,
         pitch: 41.0,
-        bearing: 78.33,
+        bearing: 0,
       },
       onChapterEnter: [
         {
@@ -970,12 +975,52 @@ var config = {
       description:
         "The former cultivation of apples, pears, plums and cherries in orchards like Werder Frucht or Alexandrovka and allotment gardens like Kleingartenverein Pfingstberg became impossible. Unpredictable and erratic cold snaps at flowering time, violent hail and fruit sunburn due to weeks of scorching heat from an absolutely cloudless sky led to certain harvest failures. <br></br>'I wish I could take a bite like Snow White right now' – Aurora laughed, touching a holographic apple with her fingertips.",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 10.5,
+        center: [13.055, 52.413],
+        zoom: 16,
         pitch: 41.0,
-        bearing: 78.33,
+        bearing: 90,
       },
-      onChapterEnter: [],
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.3,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
+        },
+
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+
+        {
+          layer: "allotments-78oelq",
+          opacity: 0.5,
+        },
+      ],
       onChapterExit: [],
     },
 
