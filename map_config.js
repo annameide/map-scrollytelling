@@ -700,10 +700,10 @@ var config = {
       description:
         "Siri went on with her story and explained that back in the ‘20s Potsdam was famous for it’s UNESCO Natural World Heritage.<br></br>“A place like the famous Park Sanssouci must have inspired a ton of people to collect some flowers and maybe even seeds” - Aurora thought.",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 10.5,
+        center: [13.15, 52.425],
+        zoom: 11.3,
         pitch: 41.0,
-        bearing: 78.33,
+        bearing: -20,
       },
       onChapterEnter: [
         {
@@ -753,12 +753,47 @@ var config = {
       description:
         "By 2030, all public parks had already been repurposed as orchards. Trees that could not bear edible fruit were abandoned. Purely aesthetic enjoyment of nature was frowned upon and partially prohibited. <br></br>Strolling through heavily robotized plantations of date palms, fig and ginko trees Aurora gazed at the rain dance performances. Government-funded research groups around the world devoted themselves to these ‘alternative techniques’ in a desperate attempt to preserve the remaining plantable areas of the earth for as long as possible.",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 10.5,
+        center: [13.0288, 52.4035],
+        zoom: 15,
         pitch: 41.0,
-        bearing: 78.33,
+        bearing: -20,
       },
-      onChapterEnter: [],
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.3,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
+        },
+
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+      ],
       onChapterExit: [],
     },
 
@@ -771,12 +806,47 @@ var config = {
       description:
         "Siri went on. Since the beginning of the regular heat summers beginning 2019, the groundwater level in the region dropped dramatically. Soil dried up to its deep layers. As a result, most of the old-growth trees such as oaks, linden trees, birches, horse chestnuts and needle trees died completely. Tornadoes accelerated the process by mercilessly uprooting century-old old trees. Younger trees fell victim to pests and staff shortages, to refill the water sacks. Trees simply became too high-maintenance. In the end, they abandoned the old tree types and turned to new ones.",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 10.5,
-        pitch: 41.0,
-        bearing: 78.33,
+        center: [13.095, 52.4052],
+        zoom: 15,
+        pitch: 51.0,
+        bearing: -20,
       },
-      onChapterEnter: [],
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.3,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
+        },
+
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+      ],
       onChapterExit: [],
     },
 
@@ -789,12 +859,47 @@ var config = {
       description:
         "Aurora turned on the holographic projections of the past. The digital holographic images were beautiful and stunning but one could not touch or smell them nor burry one’s face in it. Gradually, the beloved sight of Nordic-looking fairy-tale forests disappeared from the region. The once familiar deep green was replaced by Mediterranean to steppe-like landscapes and colors. <br></br>Unfortunately none of the dancers had any ties to the local past or otherwise useful data for the seed tracker. ",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 10.5,
-        pitch: 41.0,
-        bearing: 78.33,
+        center: [13.0946, 52.4272],
+        zoom: 15.5,
+        pitch: 51.0,
+        bearing: -20,
       },
-      onChapterEnter: [],
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.3,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
+        },
+
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+      ],
       onChapterExit: [],
     },
 
@@ -812,7 +917,47 @@ var config = {
         pitch: 41.0,
         bearing: 78.33,
       },
-      onChapterEnter: [],
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 1,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
+        },
+
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+
+        {
+          layer: "allotments-78oelq",
+          opacity: 1,
+        },
+      ],
       onChapterExit: [],
     },
 
