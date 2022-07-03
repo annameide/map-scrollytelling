@@ -294,7 +294,7 @@ var config = {
 
         {
           layer: "habitat",
-          opacity: 0.5,
+          opacity: 0,
         },
       ],
       onChapterExit: [],
@@ -435,7 +435,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "Aurora hooked up her Siri-Helmet to the underground WiFi. <br></br>“Ok, Siri. Let’s see what happend here. Tell me what climate change factors had a particularly strong impact on the Brandenburg region.” <br></br> Siri rendered a list and read it out loud:<ul><li>Warmer annual mean temperature</li><li>Sharp decrease in precipitation such as rain and snow</li><li>Forest dieback and devastating forest fires</li><li>Increasing storm events with tornadoes and hail</li><li>Heat waves and heat stress in spring and summer</li><li>Increase in weather extremes such as prolonged droughts and short but violent heavy rains resulting in floods</li><li>Loss of groundwater</li><li>Immigration of heat-loving animal and plant species, spread of neobiota bringing new pathogens and pests </li><li>Unpredictable weather events</li></ul> “Sounds familiar” Aurora thought “one either drowned or was scorched by the sun.”",
+        "Aurora hooked up her Siri-Helmet to the underground WiFi. <br></br>“Ok, Siri. Let’s see what happened here. Tell me what climate change factors had a particularly strong impact on the Brandenburg region.” <br></br> Siri rendered a list and read it out loud: Warmer annual mean temperature | Sharp decrease in precipitation such as rain and snow | Forest dieback and devastating forest fires | Increasing storm events with tornadoes and hail | Heat waves and heat stress in spring and summer | Increase in weather extremes such as prolonged droughts and short but violent heavy rains resulting in floods | Loss of groundwater | Immigration of heat-loving animal and plant species, spread of neobiota bringing new pathogens and pests | Unpredictable weather events. <br></br>“Sounds familiar” Aurora thought “one either drowned or was scorched by the sun.",
       location: {
         center: [13.1, 52.43],
         zoom: 7.7,
@@ -468,6 +468,7 @@ var config = {
           layer: "orchard-landuse",
           opacity: 0,
         },
+
         {
           layer: "habitat",
           opacity: 0,
