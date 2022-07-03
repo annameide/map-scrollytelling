@@ -405,7 +405,7 @@ var config = {
     // 8. text box
     {
       id: "8--textbox",
-      alignment: "right",
+      alignment: "left",
       title: "",
       image: "",
       description:
@@ -625,23 +625,119 @@ var config = {
       },
 
       onChapterEnter: [
-        //{
-        //layer: 'potsdam-city-fill',
-        //opacity: 0
-        //},
-
-        //{
-        //  layer: 'farmland-landuse',
-        //opacity: 0
-        //},
-
         {
-          layer: "allotments-78oelq",
+          layer: "allotments",
           opacity: 0,
         },
 
         {
           layer: "orchard-landuse",
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [],
+    },
+
+    // 12. text box
+    {
+      id: "12--textbox",
+      alignment: "left",
+      title: "",
+      image: "",
+      description:
+        "Over time, cereals such as wheat and rye, as well as corn, disappeared completely from Brandenburg agriculture. The soil became too dry and the harvests were increasingly poor in nutrients, so that the danger of malnutrition became greater. <br></br> Chickpeas were the main crop grown now. Millet, buckwheat, soybeans and sweet potatoes also found their way in. By 2072, crops were growing in Potsdam that had previously been native to the Middle East or North Africa. Germany, which until the 2020s had been famous for its bread-baking culture, became increasingly known for hummus. The Middle East and North Africa were not so lucky. These regions became lifeless, sterile deserts. <br></br>Aurora went inside the institute but the scientists had no useful information for her.",
+      location: {
+        center: [12.9184, 52.43],
+        zoom: 11,
+        pitch: 0,
+        bearing: 0,
+      },
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0.7,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
+        },
+
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [],
+    },
+
+    // 13. text box
+    {
+      id: "13--textbox",
+      alignment: "right",
+      title: "ICU Tree Patients",
+      image: "",
+      description:
+        "Siri went on with her story and explained that back in the ‘20s Potsdam was famous for it’s UNESCO Natural World Heritage.<br></br>“A place like the famous Park Sanssouci must have inspired a ton of people to collect some flowers and maybe even seeds” - Aurora thought.",
+      location: {
+        center: [12.9184, 52.43],
+        zoom: 10.5,
+        pitch: 41.0,
+        bearing: 78.33,
+      },
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0.7,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
+        },
+
+        {
+          layer: "leibnitzinstitut",
           opacity: 0,
         },
       ],
@@ -669,7 +765,7 @@ var config = {
     // 15. text box
     {
       id: "15--textbox",
-      alignment: "left",
+      alignment: "right",
       title: "",
       image: "",
       description:
@@ -687,7 +783,7 @@ var config = {
     // 16. text box
     {
       id: "16--textbox",
-      alignment: "left",
+      alignment: "right",
       title: "",
       image: "",
       description:
