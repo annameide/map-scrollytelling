@@ -34,6 +34,11 @@ var config = {
       // here come layers which you want to hide or show
       onChapterEnter: [
         {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+
+        {
           layer: "potsdam-city-fill",
           opacity: 0.4,
         },
@@ -388,46 +393,6 @@ var config = {
     //   onChapterExit: [],
     // },
 
-    // 3. illustration
-    // {
-    //   id: "glacier-np",
-    //   alignment: "full",
-    //   title: "",
-
-    //   // pictures are loaded from the assets folder
-    //   image: "./assets/2_illustration.png",
-    //   description: "",
-    //   location: {
-    //     center: [12.9184, 52.43],
-    //     zoom: 10.9,
-    //     pitch: 0.0,
-    //     bearing: 0.0,
-    //   },
-
-    //   onChapterEnter: [
-    //     {
-    //       layer: "potsdam-city-fill",
-    //       opacity: 0.3,
-    //     },
-
-    //     {
-    //       layer: "farmland-landuse",
-    //       opacity: 0,
-    //     },
-
-    //     {
-    //       layer: "parks-leisure",
-    //       opacity: 0.7,
-    //     },
-
-    //     {
-    //       layer: "orchard-landuse",
-    //       opacity: 0,
-    //     },
-    //   ],
-    //   onChapterExit: [],
-    // },
-
     // 7. text box
     {
       id: "7--textbox",
@@ -526,40 +491,6 @@ var config = {
       onChapterExit: [],
     },
 
-    //4. illustration
-    // {
-    //   id: "glacier-np",
-    //   alignment: "full",
-    //   title: "",
-
-    //   // pictures are loaded from the assets folder
-    //   image: "./assets/2_illustration.png",
-    //   description: "",
-    //   location: {
-    //     center: [12.9184, 52.43],
-    //     zoom: 12,
-    //     pitch: 0.0,
-    //     bearing: 0.0,
-    //   },
-
-    //   onChapterEnter: [
-    //     {
-    //       layer: "gnpglaciers-1998",
-    //       opacity: 0.25,
-    //     },
-    //     {
-    //       layer: "glaciernp-boundary",
-    //       opacity: 0.25,
-    //     },
-    //   ],
-    //   onChapterExit: [
-    //     {
-    //       layer: "glaciernp-boundary",
-    //       opacity: 0,
-    //     },
-    //   ],
-    // },
-
     // 9. text box
     {
       id: "9--textbox",
@@ -602,6 +533,11 @@ var config = {
 
         {
           layer: "habitat",
+          opacity: 0,
+        },
+
+        {
+          layer: "leibnitzinstitut",
           opacity: 0,
         },
       ],
@@ -652,6 +588,11 @@ var config = {
           layer: "habitat",
           opacity: 0,
         },
+
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
       ],
       onChapterExit: [],
     },
@@ -665,8 +606,8 @@ var config = {
       description:
         "On the confiscated World Food Program fields however, pure monocultures were grown . Aurora put on her helmet. Holograms of wheat swaying in the wind were superimposed over the plastic-penetrated, artificially irrigated chickpea fields monitored by drones. <br></br> Googles DataVizZard AI generated a detailed hologram of the surroundings using satellite images, smartphone photos from the ‘20s and other geolocation meta data. <br></br>'Wheat is good. We might grow it in Alaska if adopted correctly.' - Aurora thought. <br></br>A recovery team had to be ordered quickly. Perhaps old varieties could be tracked down in the deeper sandy, rocky earth layers.",
       location: {
-        center: [13.0125, 52.43844],
-        zoom: 12,
+        center: [13.008, 52.4373],
+        zoom: 16,
         pitch: 0,
         bearing: 0,
       },
