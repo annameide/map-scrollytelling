@@ -353,46 +353,6 @@ var config = {
       onChapterExit: [],
     },
 
-    // 2. illustration
-    // {
-    //   id: "_1--illustration",
-    //   alignment: "right",
-    //   title: "",
-
-    //   // pictures are loaded from the assets folder
-    //   image: "./assets/0_testillustration",
-    //   description: "",
-    //   location: {
-    //     center: [12.9184, 52.43],
-    //     zoom: 12,
-    //     pitch: 0.0,
-    //     bearing: 0.0,
-    //   },
-
-    //   onChapterEnter: [
-    //     //{
-    //     //layer: 'potsdam-city-fill',
-    //     //opacity: 0
-    //     //},
-
-    //     //{
-    //     //  layer: 'farmland-landuse',
-    //     //opacity: 0
-    //     //},
-
-    //     {
-    //       layer: "allotments-78oelq",
-    //       opacity: 0,
-    //     },
-
-    //     {
-    //       layer: "orchard-landuse",
-    //       opacity: 0,
-    //     },
-    //   ],
-    //   onChapterExit: [],
-    // },
-
     // 7. text box
     {
       id: "7--textbox",
@@ -644,6 +604,44 @@ var config = {
 
         {
           layer: "habitat",
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [],
+    },
+
+    // 2. illustration
+    {
+      id: "_2--illustration",
+      alignment: "left",
+      title: "",
+      image: "./assets/chickpeas.png",
+      description: "",
+      location: {
+        center: [13.008, 52.4373],
+        zoom: 16,
+        pitch: 0,
+        bearing: 0,
+      },
+
+      onChapterEnter: [
+        //{
+        //layer: 'potsdam-city-fill',
+        //opacity: 0
+        //},
+
+        //{
+        //  layer: 'farmland-landuse',
+        //opacity: 0
+        //},
+
+        {
+          layer: "allotments-78oelq",
+          opacity: 0,
+        },
+
+        {
+          layer: "orchard-landuse",
           opacity: 0,
         },
       ],
