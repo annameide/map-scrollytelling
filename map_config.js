@@ -10,7 +10,7 @@ var config = {
   subtitle: "A sci-fi short story inspired by data journalism",
   byline: "",
   footer:
-    'The scrollytelling project <em>Working Title here</em> was created as part of the <em>Power of Maps. Maps of Power</em> course during the summer term 2022 at the <a href="https://design.fh-potsdam.de/University">University of Applied Sciences Potsdam</a> under the supervision of Prof. Sebastian Meier. You can find a detailed project documentation and the geodata sets on <a href="https://github.com/annameide/map-scrollytelling">GitHub</a>.<br></br>&copy; Anna Meide',
+    'The scrollytelling project <em>The Seed Tracker</em> was created as part of the <em>Power of Maps. Maps of Power</em> course during the summer term 2022 at the <a href="https://design.fh-potsdam.de/University">University of Applied Sciences Potsdam</a> under the supervision of Prof. Sebastian Meier. You can find a detailed project documentation and the geodata sets on <a href="https://github.com/annameide/map-scrollytelling">GitHub</a>.<br></br>&copy; Anna Meide',
 
   chapters: [
     // 1. textbox
