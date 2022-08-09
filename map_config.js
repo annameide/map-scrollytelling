@@ -1109,10 +1109,10 @@ var config = {
       description:
         "The gardener she found was enjoying his ‘Bug Break’. Protein bars made from insects – the world depended on them for sufficient nutrition. After Aurora had introduced herself and her reason for being there, the two started talking.",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 10.5,
-        pitch: 41.0,
-        bearing: 78.33,
+        center: [13.1, 52.428],
+        zoom: 15,
+        pitch: 60.0,
+        bearing: 0,
       },
       onChapterEnter: [],
       onChapterExit: [],
@@ -1127,10 +1127,10 @@ var config = {
       description:
         "The gardener actually knew the association, Aurora was looking for. <br></br>“Some  members endeavor to preserve and recultivate useful plants even today.” – he told her. “Even though it is illegal to use the water for it. <br></br>In the 20’s, the association accomodated about 2.000 almost extinct crop varieties. In addition, it provided knowledge about cultivation, care and use of crops in an easily accessible manner. People coordinated preservation networks, which together grew hundreds of different plant  varieties each year. This was, of course, before the draconian water rationalization of the 1930s and the federalization of gardens.",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 10.5,
-        pitch: 41.0,
-        bearing: 78.33,
+        center: [13.1, 52.428],
+        zoom: 15,
+        pitch: 60.0,
+        bearing: 0,
       },
       onChapterEnter: [],
       onChapterExit: [],
@@ -1145,10 +1145,10 @@ var config = {
       description:
         "The goal was to preserve the genetic diversity for future plant breeding. Because they anticipated that only a critical mass of varieties could spark a revival of diversity. <br></br> 'Earth’s flora and fauna have something decidedly ahead of us humans. They have already experienced changing global climates more than once, and because no one has interfered with them, they and their descendants have survived. For humanity, this is largely uncharted territory. Nature has no human sense of time. For our planet, millions of years to rgenerate mean nothing. Time is not a tangible category for it. But is is for us humans ... .' – the gardener concluded.",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 10.5,
-        pitch: 41.0,
-        bearing: 78.33,
+        center: [13.1, 52.428],
+        zoom: 15,
+        pitch: 60.0,
+        bearing: 0,
       },
       onChapterEnter: [],
       onChapterExit: [],
