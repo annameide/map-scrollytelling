@@ -237,9 +237,12 @@ u {
 }
 
 a,
-a:hover,
 a:visited {
-  color: #0071bc;
+  color: #f7c75c;
+}
+
+a:hover {
+  color: #c37839;
 }
 
 #map {

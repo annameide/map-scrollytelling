@@ -10,7 +10,7 @@ var config = {
   subtitle: "A sci-fi short story inspired by data journalism",
   byline: "",
   footer:
-    'The scrollytelling project <em>The Seed Tracker</em> was created as part of the <em>Power of Maps. Maps of Power</em> course during the summer term 2022 at the <a href="https://design.fh-potsdam.de/University">University of Applied Sciences Potsdam</a> under the supervision of Prof. Sebastian Meier. You can find a detailed project documentation and the geodata sets on <a href="https://github.com/annameide/map-scrollytelling">GitHub</a>.<br></br>&copy; Anna Meide',
+    'The scrollytelling project <em>The Seed Tracker</em> was created as part of the <em>Power of Maps. Maps of Power</em> course during the summer term 2022 at the <a href="https://design.fh-potsdam.de/University">University of Applied Sciences Potsdam</a> under the supervision of Prof. Sebastian Meier. You can find the project documentation on <a href="https://github.com/annameide/map-scrollytelling">GitHub</a>. <br></br>The science fiction short story is loosely based on the data journalism book <a href="https://www.kiwi-verlag.de/buch/toralf-staud-nick-reimer-deutschland-2050-9783462000689"><em>Deutschland 2050</em></a>, the Twitter accounts of climate journalist <a href="https://twitter.com/AnnikaJoeres">Annika Joeres</a>, Fridays for Future activist <a href="https://twitter.com/Luisamneubauer">Luisa Neubauer</a>, the <a href="https://twitter.com/tazKlima">Taz Klima</a> division and an expert interview with a former <a href="https://www.bund.net/">BUND</a> employee.<br></br>&copy; Anna Meide',
 
   chapters: [
     // 1. textbox
