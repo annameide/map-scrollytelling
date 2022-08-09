@@ -1128,7 +1128,47 @@ var config = {
         pitch: 0,
         bearing: 0,
       },
-      onChapterEnter: [],
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.3,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
+        },
+
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+
+        {
+          layer: "allotments-78oelq",
+          opacity: 0.5,
+        },
+      ],
       onChapterExit: [],
     },
   ],
