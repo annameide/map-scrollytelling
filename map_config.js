@@ -1038,7 +1038,47 @@ var config = {
         pitch: 41.0,
         bearing: 78.33,
       },
-      onChapterEnter: [],
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.3,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
+        },
+
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+
+        {
+          layer: "allotments-78oelq",
+          opacity: 0.5,
+        },
+      ],
       onChapterExit: [],
     },
 
@@ -1051,8 +1091,8 @@ var config = {
       description:
         "Harvesting and tending to the plants were largely taken over by robots, as the heat at midday became a danger for the often elderly population. Harvesting robots and drones, which used object recognition algorithms to detect ripeness and pests, whirred in circles. <br></br>It took Aurora a while to locate a human gardener for consultation. ",
       location: {
-        center: [12.9184, 52.43],
-        zoom: 10.5,
+        center: [13.0609, 52.4225],
+        zoom: 17,
         pitch: 41.0,
         bearing: 78.33,
       },
