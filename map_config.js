@@ -20,7 +20,7 @@ var config = {
       title: "Klimabunker Nr. 42",
       image: "",
       description:
-        "Aurora arrived in her accomodations in Potsdam midsummer. The weather was relatively mild – the average +42°C, glistering sunlight and a looming sandstorm on the horizon.",
+        "Aurora arrived in her accomodations in Potsdam midsummer. The weather was relatively mild – the average 45°C, scorching sunlight and a looming sandstorm on the horizon.",
       location: {
         // look for offset in documentation / center of display 16:9 passt
         center: [12.9, 52.4399],
@@ -83,7 +83,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "The address on the keychain read “Potsdamer Havel – Klimabunker Nr. 42, 14473 Potsdam”. More than a decade has passed since the Great Climate Evacuation and the draining of city lakes to provide enough living space for the remaining world population. The scarce resource water was harvested and rationalized by the European Branch of the United Nations. Today water for ordinary civilians was only available for drinking. <br></br> Aurora turned the key and took the elevator underground to the naturally conditioned sub levels of the Klimabunker. The ad for Potsdam’s famous Melons started playing. It’s slogan “Grown locally – consumed globally” however, only conveyed a partial truth about the food supply of the remaining world population in 2072.",
+        "The address on the keychain read “Potsdamer Havel – Klimabunker Nr. 42, 14473 Potsdam”. More than a decade has passed since the Great Climate Evacuation and the draining of city lakes to provide enough living space for the remaining world population. The scarce resource water was harvested and rationalized by the European Branch of the United Nations. Today water for ordinary civilians was only available for drinking. <br></br> Aurora turned the key and took the elevator underground to the naturally conditioned sub levels of the Klimabunker. The elevator walls were covered in stickers, one of which was advertising Potsdam’s famous melons. “Grown locally – enjoyed globally” the golden slogan glittered softly in the pale, artificial LED-light. “Melons from Central Europe...” Aurora thought “When did this become ‘normal’?” she asked herself.",
       location: {
         // look for offset in documentation / center of display 16:9 passt
         center: [13.0567, 52.3888],
@@ -131,7 +131,7 @@ var config = {
       title: "",
 
       // pictures are loaded from the assets folder
-      image: "./assets/melons.png",
+      image: "./assets/melons2.png",
       description: "",
       location: {
         center: [13.0567, 52.3888],
