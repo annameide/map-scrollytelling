@@ -176,7 +176,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "Aurora has been working as a seed tracker for the UNDRR (United Nations Office for Disaster Risk Reduction) for three years now. As a trained botanist she took part in the “Floras Mercy” project. Her job was to travel still inhabitable areas of Europe and collect data on indigenous plant life present in a particular region and time.",
+        "Aurora has been working as a seed tracker for the UNDRR (United Nations Office for Disaster Risk Reduction) for three years now. As a trained botanist she took part in the “'Flora's Mercy” project. Her job was to travel still inhabitable areas of Europe and collect data on indigenous plant life present in a particular region and time.",
       location: {
         center: [12.9184, 53.0],
         zoom: 7.5,
@@ -222,7 +222,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "The disaster to be reduced was famine and malnutrition. At the onset of the 21. century in addition to man-made climate change came man-made diversity deficiency. At least 75% of the world’s crops have been lost, mainly through the breeding of f1 hybrids. Monocultures replaced diversity: of 7.000 edible crop species, fewer than 200 contributed to global food production. Wheat, rice and corn provided 60% of the world's calories and were optimized for output, not climate adaptation, which made them vulnerable to disasters.",
+        "The disaster to be reduced was famine and malnutrition. At the onset of the 21. century in addition to man-made climate change came man-made diversity deficiency. At least 75% of the world’s crops have been lost, mainly through the breeding of F1-hybrids. Monocultures replaced diversity: of 7.000 edible crop species, fewer than 200 contributed to global food production. Wheat, rice and corn provided 60% of the world's calories and were optimized for output, not climate adaptation, which made them vulnerable to disasters.",
       location: {
         center: [12.9184, 53.0],
         zoom: 3.5,
