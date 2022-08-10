@@ -362,6 +362,12 @@ p {
 #_2--illustration .light {
   background-color: transparent;
   width: 100%;
+  opacity: 1;
+}
+
+#_3--illustration .light {
+  background-color: transparent;
+  width: 100%;
 }
 
 .dark {
