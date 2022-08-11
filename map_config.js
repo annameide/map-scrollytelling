@@ -25,8 +25,6 @@ var config = {
         // look for offset in documentation / center of display 16:9 passt
         center: [12.9, 52.4399],
         zoom: 10.9,
-        // pitch: 39.50, nice touch try out later
-        // bearing: 36.00
         pitch: 0,
         bearing: 0,
       },
@@ -88,14 +86,17 @@ var config = {
         // look for offset in documentation / center of display 16:9 passt
         center: [13.0567, 52.3888],
         zoom: 14,
-        // pitch: 39.50, nice touch try out later
-        // bearing: 36.00
         pitch: 0,
         bearing: 0,
       },
 
       // here come layers which you want to hide or show
       onChapterEnter: [
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+
         {
           layer: "potsdam-city-fill",
           opacity: 0.4,
@@ -142,6 +143,11 @@ var config = {
 
       onChapterEnter: [
         {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+
+        {
           layer: "potsdam-city-fill",
           opacity: 0.4,
         },
@@ -182,11 +188,14 @@ var config = {
         zoom: 7.5,
         pitch: 0,
         bearing: 0,
-        //pitch: 39.50,
-        //bearing: 36.00
       },
 
       onChapterEnter: [
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+
         {
           layer: "potsdam-city-fill",
           opacity: 0.5,
