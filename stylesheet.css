@@ -370,6 +370,11 @@ p {
   width: 100%;
 }
 
+#_4--illustration .light {
+  background-color: transparent;
+  width: 100%;
+}
+
 .dark {
   color: #fafafa;
   background-color: #444;

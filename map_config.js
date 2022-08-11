@@ -859,6 +859,38 @@ var config = {
       onChapterExit: [],
     },
 
+    // 4. illustration
+    {
+      id: "_4--illustration",
+      alignment: "center",
+      title: "",
+      image: "./assets/4_illustration.png",
+      description: "",
+      location: {
+        center: [13.0288, 52.4035],
+        zoom: 15,
+        pitch: 41.0,
+        bearing: -20,
+      },
+
+      onChapterEnter: [
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+
+        {
+          layer: "allotments",
+          opacity: 0,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [],
+    },
     // 15. text box
     {
       id: "15--textbox",
