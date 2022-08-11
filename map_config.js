@@ -412,8 +412,6 @@ var config = {
       id: "_2--illustration",
       alignment: "center",
       title: "",
-
-      // pictures are loaded from the assets folder
       image: "./assets/16zu9.png",
       description: "",
       location: {
@@ -431,7 +429,7 @@ var config = {
 
         {
           layer: "habitat",
-          opacity: 1,
+          opacity: 0,
         },
 
         {
@@ -451,51 +449,6 @@ var config = {
       ],
       onChapterExit: [],
     },
-
-    // // 3. illustration
-    // {
-    //   id: "_3--illustration",
-    //   alignment: "center",
-    //   title: "",
-
-    //   // pictures are loaded from the assets folder
-    //   image: "./assets/4zu3.png",
-    //   description: "",
-    //   location: {
-    //     center: [13.0567, 52.3888],
-    //     zoom: 14,
-    //     pitch: 0.0,
-    //     bearing: 0.0,
-    //   },
-
-    //   onChapterEnter: [
-    //     {
-    //       layer: "potsdam-city-fill",
-    //       opacity: 0.4,
-    //     },
-
-    //     {
-    //       layer: "habitat",
-    //       opacity: 1,
-    //     },
-
-    //     {
-    //       layer: "farmland-landuse",
-    //       opacity: 0,
-    //     },
-
-    //     {
-    //       layer: "parks-leisure",
-    //       opacity: 0,
-    //     },
-
-    //     {
-    //       layer: "orchard-landuse",
-    //       opacity: 0,
-    //     },
-    //   ],
-    //   onChapterExit: [],
-    // },
 
     // 8. text box
     {
