@@ -457,7 +457,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "A comparison of the satellite images confirmed Aurora's assumption that Brandenburg was a temperate zone before climate change transformed the region into a steppe.",
+        "The research confirmed Aurora’s assumptions – Brandenburg was once a temperate zone with fairytale like forests. But but repeated droughts and devastating forest fires turned it irretrievably into a steppe.",
       location: {
         center: [13.1, 52.43],
         zoom: 7.7,
