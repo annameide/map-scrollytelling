@@ -667,39 +667,6 @@ var config = {
       onChapterExit: [],
     },
 
-    // 3. illustration
-    {
-      id: "_3--illustration",
-      alignment: "center",
-      title: "",
-      image: "./assets/3_illustration.png",
-      description: "",
-      location: {
-        center: [13.008, 52.4373],
-        zoom: 15,
-        pitch: 0,
-        bearing: 0,
-      },
-
-      onChapterEnter: [
-        {
-          layer: "leibnitzinstitut",
-          opacity: 0,
-        },
-
-        {
-          layer: "allotments",
-          opacity: 0,
-        },
-
-        {
-          layer: "orchard-landuse",
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [],
-    },
-
     // 12. text box
     {
       id: "12--textbox",
@@ -747,6 +714,39 @@ var config = {
 
         {
           layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [],
+    },
+
+    // 3. illustration
+    {
+      id: "_3--illustration",
+      alignment: "center",
+      title: "",
+      image: "./assets/3_illustration.png",
+      description: "",
+      location: {
+        center: [13.008, 52.4373],
+        zoom: 12.5,
+        pitch: 0,
+        bearing: 0,
+      },
+
+      onChapterEnter: [
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+
+        {
+          layer: "allotments",
+          opacity: 0,
+        },
+
+        {
+          layer: "orchard-landuse",
           opacity: 0,
         },
       ],
