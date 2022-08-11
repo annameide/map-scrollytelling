@@ -631,7 +631,7 @@ var config = {
       onChapterEnter: [
         {
           layer: "potsdam-city-fill",
-          opacity: 0.3,
+          opacity: 0,
         },
 
         {
@@ -729,12 +729,17 @@ var config = {
       description: "",
       location: {
         center: [13.008, 52.4373],
-        zoom: 12.5,
+        zoom: 15,
         pitch: 0,
         bearing: 0,
       },
 
       onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.0,
+        },
+
         {
           layer: "leibnitzinstitut",
           opacity: 0,
@@ -770,7 +775,7 @@ var config = {
       onChapterEnter: [
         {
           layer: "potsdam-city-fill",
-          opacity: 0.5,
+          opacity: 0.3,
         },
 
         {
@@ -908,7 +913,7 @@ var config = {
       onChapterEnter: [
         {
           layer: "potsdam-city-fill",
-          opacity: 0.3,
+          opacity: 0,
         },
 
         {
@@ -961,7 +966,7 @@ var config = {
       onChapterEnter: [
         {
           layer: "potsdam-city-fill",
-          opacity: 0.3,
+          opacity: 0,
         },
 
         {
@@ -1130,7 +1135,7 @@ var config = {
       onChapterEnter: [
         {
           layer: "potsdam-city-fill",
-          opacity: 0.3,
+          opacity: 0,
         },
 
         {
