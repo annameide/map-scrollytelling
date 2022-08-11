@@ -823,7 +823,7 @@ var config = {
       onChapterEnter: [
         {
           layer: "potsdam-city-fill",
-          opacity: 0.3,
+          opacity: 0,
         },
 
         {
@@ -1072,7 +1072,7 @@ var config = {
       onChapterEnter: [
         {
           layer: "potsdam-city-fill",
-          opacity: 0.3,
+          opacity: 0,
         },
 
         {
@@ -1087,7 +1087,7 @@ var config = {
 
         {
           layer: "orchard-landuse",
-          opacity: 0.5,
+          opacity: 0.7,
         },
 
         {
