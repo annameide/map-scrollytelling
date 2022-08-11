@@ -1009,7 +1009,7 @@ var config = {
       title: "Fruit Sunburn",
       image: "",
       description:
-        "The last place on Aurora’s list were the former allotment gardens. <br></br>'Siri, tell me the story about Potsdam's allotment gardens.' – said Aurora into the voice interface. And Siri’s digital mind was always ready to go. <br></br>What once were popular and desired allotments have become urban climate gardens. In extensive citizen science projects, politicians engaged all knowledgeable people to grow only edible plants and collect data on what survived in the new extreme conditions. Those were not requests, but legislative decrees.",
+        "The last place on Aurora’s list were the former allotment gardens and orchards. <br></br>'Siri, tell me the story about Potsdam's allotment gardens.' – said Aurora into the voice interface. And Siri’s digital mind was always ready to go. <br></br>What once were popular and desired allotments have become urban climate gardens. In extensive citizen science projects, politicians engaged all knowledgeable people to grow only edible plants and collect data on what survived in the new extreme conditions. Those were not requests, but legislative decrees.",
       location: {
         center: [12.9184, 52.43],
         zoom: 10.5,
@@ -1255,7 +1255,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "“Would you care for an  apple from Potsdam?” – he smiled and handed Aurora an apple. <br></br>Aurora has never been so happy about an illegal underground organization, her mind filled up with possibilities ... <br></br>WHUUUUUUUUUUUUUU!!!<br></br>The howl of the environmental siren burst into her imagined utopia. A sand tornado was approaching. Aurora had to return quickly to Klimabunker Nr. 42. She put on her sand storm respiratory mask and took the apple.",
+        "“Would you care for an apple from Potsdam that is not genetically altered to contain 3.000 kcal but also tastes like dust?” – he smiled and handed Aurora an apple variety she has never seen before. <br></br>Aurora has never been so happy about an illegal underground organization, her mind filled up with possibilities ... <br></br>WHUUUUUUUUUUUUUU!!!<br></br>The howl of the environmental siren burst into her imagined utopia. A sand tornado was approaching. Aurora had to return quickly to Klimabunker Nr. 42. She put on her sand storm respiratory mask and took the apple.",
       location: {
         center: [12.9184, 52.43],
         zoom: 10.5,
