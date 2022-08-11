@@ -667,33 +667,33 @@ var config = {
       onChapterExit: [],
     },
 
-    // 2. illustration
-    {
-      id: "_2--illustration",
-      alignment: "left",
-      title: "",
-      image: "./assets/chickpeas.png",
-      description: "",
-      location: {
-        center: [13.008, 52.4373],
-        zoom: 16,
-        pitch: 0,
-        bearing: 0,
-      },
+    // // 3. illustration
+    // {
+    //   id: "_3--illustration",
+    //   alignment: "left",
+    //   title: "",
+    //   image: "./assets/3_illustration.png",
+    //   description: "",
+    //   location: {
+    //     center: [13.008, 52.4373],
+    //     zoom: 16,
+    //     pitch: 0,
+    //     bearing: 0,
+    //   },
 
-      onChapterEnter: [
-        {
-          layer: "allotments",
-          opacity: 0,
-        },
+    //   onChapterEnter: [
+    //     {
+    //       layer: "allotments",
+    //       opacity: 0,
+    //     },
 
-        {
-          layer: "orchard-landuse",
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [],
-    },
+    //     {
+    //       layer: "orchard-landuse",
+    //       opacity: 0,
+    //     },
+    //   ],
+    //   onChapterExit: [],
+    // },
 
     // 12. text box
     {
