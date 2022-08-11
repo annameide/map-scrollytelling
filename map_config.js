@@ -131,7 +131,7 @@ var config = {
       title: "",
 
       // pictures are loaded from the assets folder
-      image: "./assets/melons2.png",
+      image: "./assets/1_illustration.png",
       description: "",
       location: {
         center: [13.0567, 52.3888],
