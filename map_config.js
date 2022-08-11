@@ -412,7 +412,7 @@ var config = {
       id: "_2--illustration",
       alignment: "center",
       title: "",
-      image: "./assets/16zu9.png",
+      image: "./assets/2_illustration.png",
       description: "",
       location: {
         center: [13.0567, 52.3888],
