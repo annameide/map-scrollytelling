@@ -1353,7 +1353,123 @@ var config = {
       title: "",
       image: "",
       description:
-        "“Would you care for an apple from Potsdam that is not genetically altered to contain 3.000 kcal but also tastes like dust?” – he smiled and handed Aurora an apple variety she has never seen before. <br></br>Aurora has never been so happy about an illegal underground organization, her mind filled up with possibilities ... <br></br>WHUUUUUUUUUUUUUU!!!<br></br>The howl of the environmental siren burst into her imagined utopia. A sand tornado was approaching. Aurora had to return quickly to Klimabunker Nr. 42. She put on her sand storm respiratory mask and took the apple.",
+        "“Would you care for an apple from Potsdam that is not genetically altered to contain 3.000 kcal but also tastes like dust?” – he smiled and handed Aurora an apple variety she has never seen before. <br></br>Aurora has never been so happy about an illegal underground organization, her mind filled up with possibilities ... <br></br>WOOOOOOOOOOOOO!!!",
+      location: {
+        center: [12.9184, 52.43],
+        zoom: 10.5,
+        pitch: 0,
+        bearing: 0,
+      },
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.3,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
+        },
+
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+
+        {
+          layer: "allotments-78oelq",
+          opacity: 0.5,
+        },
+      ],
+      onChapterExit: [],
+    },
+
+    // 7. illustration
+    {
+      id: "_7--illustration",
+      alignment: "center",
+      title: "",
+      image: "./assets/7_illustration.png",
+      description: "",
+      location: {
+        center: [12.9184, 52.43],
+        zoom: 10.5,
+        pitch: 0,
+        bearing: 0,
+      },
+
+      onChapterEnter: [
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0.3,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0.5,
+        },
+
+        {
+          layer: "brandenburg",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 0,
+        },
+
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+
+        {
+          layer: "allotments-78oelq",
+          opacity: 0.5,
+        },
+      ],
+      onChapterExit: [],
+    },
+
+    // 25. text box
+    {
+      id: "25--textbox",
+      alignment: "center",
+      title: "",
+      image: "",
+      description:
+        "The howl of the environmental siren burst into her imagined utopia. A sand tornado was approaching. Aurora had to return quickly to Klimabunker Nr. 42. She put on her sand storm respiratory mask and took the apple.<br></br> THE END",
       location: {
         center: [12.9184, 52.43],
         zoom: 10.5,
