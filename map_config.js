@@ -1229,7 +1229,7 @@ var config = {
     // 6. illustration
     {
       id: "_6--illustration",
-      alignment: "center",
+      alignment: "left",
       title: "",
       image: "./assets/6_illustration.png",
       description: "",
@@ -1277,7 +1277,7 @@ var config = {
     // 20. text box
     {
       id: "20--textbox",
-      alignment: "left",
+      alignment: "right",
       title: "",
       image: "",
       description:
