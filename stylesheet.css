@@ -377,6 +377,11 @@ p {
 
 #_5--illustration .light {
   background-color: transparent;
+  width: 100%;
+}
+
+#_6--illustration .light {
+  background-color: transparent;
   width: 40%;
 }
 

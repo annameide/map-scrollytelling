@@ -1179,11 +1179,59 @@ var config = {
     // 5. illustration
     {
       id: "_5--illustration",
-      alignment: "right",
+      alignment: "center",
       title: "",
 
       // pictures are loaded from the assets folder
       image: "./assets/5_illustration.png",
+      description: "",
+      location: {
+        center: [13.0609, 52.4225],
+        zoom: 17,
+        pitch: 41.0,
+        bearing: 78.33,
+      },
+
+      onChapterEnter: [
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 1,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [],
+    },
+
+    // 6. illustration
+    {
+      id: "_6--illustration",
+      alignment: "center",
+      title: "",
+      image: "./assets/6_illustration.png",
       description: "",
       location: {
         center: [13.0609, 52.4225],
