@@ -375,6 +375,11 @@ p {
   width: 100%;
 }
 
+#_5--illustration .light {
+  background-color: transparent;
+  width: 40%;
+}
+
 .dark {
   color: #fafafa;
   background-color: #444;

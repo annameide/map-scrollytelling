@@ -1125,7 +1125,7 @@ var config = {
       title: "",
       image: "",
       description:
-        "2072 Cultivation shifted to apricots, kiwis, nectarines, ginger, sea buckthorn, physalis, melons and sun-loving grape varieties. <br></br>“Wouldn’t say no to a Swedish Merlot” – Aurora murmured to herself, sweating in her sunprotection suite. 2072 it was Skandinavia that provided the world with wine.",
+        "2072 Cultivation shifted to apricots, kiwis, nectarines, ginger, sea buckthorn, physalis, melons and sun-loving grape varieties. <br></br>“Wouldn’t say no to a Finnish Cabernet Sauvignon” – Aurora murmured to herself, sweating in her sunprotection suite. 2072 it was Skandinavia that provided the world with wine.",
       location: {
         center: [13.0609, 52.4225],
         zoom: 17,
@@ -1171,6 +1171,56 @@ var config = {
         {
           layer: "allotments-78oelq",
           opacity: 0.5,
+        },
+      ],
+      onChapterExit: [],
+    },
+
+    // 5. illustration
+    {
+      id: "_5--illustration",
+      alignment: "right",
+      title: "",
+
+      // pictures are loaded from the assets folder
+      image: "./assets/5_illustration.png",
+      description: "",
+      location: {
+        center: [13.0609, 52.4225],
+        zoom: 17,
+        pitch: 41.0,
+        bearing: 78.33,
+      },
+
+      onChapterEnter: [
+        {
+          layer: "leibnitzinstitut",
+          opacity: 0,
+        },
+
+        {
+          layer: "potsdam-city-fill",
+          opacity: 0,
+        },
+
+        {
+          layer: "habitat",
+          opacity: 1,
+        },
+
+        {
+          layer: "farmland-landuse",
+          opacity: 0,
+        },
+
+        {
+          layer: "parks-leisure",
+          opacity: 0,
+        },
+
+        {
+          layer: "orchard-landuse",
+          opacity: 0,
         },
       ],
       onChapterExit: [],
